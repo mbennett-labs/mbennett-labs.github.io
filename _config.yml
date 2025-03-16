@@ -1,0 +1,12 @@
+title: MB Tech Blog
+description: Biweekly insights on AI, Blockchain, and Quantum Computing
+author: Bennett Labs
+
+# Jekyll settings
+permalink: /blog/:year/:month/:day/:title/
+
+# Theme settings
+theme: minima
+
+# Build settings
+markdown: kramdown
