@@ -31,6 +31,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Tech Blog</a></li> <!-- New Blog Navigation Link -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -167,6 +168,45 @@
             </div>
             <div class="view-all">
                 <a href="https://github.com/mbennett-labs?tab=repositories" target="_blank" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2>Tech Blog</h2>
+            <div class="blog-description">
+                <p>My biweekly insights on emerging technologies including AI, blockchain, and quantum computing.</p>
+            </div>
+            <div class="blog-preview">
+                <!-- This section will be populated by Jekyll -->
+                {% for post in site.posts limit:3 %}
+                <div class="blog-card">
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <p class="blog-date">{{ post.date | date: "%B %d, %Y" }}</p>
+                    <div class="blog-excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                    <div class="blog-tags">
+                        {% for category in post.categories %}
+                        <span class="blog-tag">{{ category }}</span>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ post.url }}" class="btn">Read More</a>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- If no posts yet -->
+            {% if site.posts.size == 0 %}
+            <div class="no-posts">
+                <p>First blog post coming soon! Check back on March 30th for our inaugural tech article.</p>
+            </div>
+            {% endif %}
+            
+            <div class="view-all-posts">
+                <a href="/blog" class="btn btn-outline">View All Posts</a>
             </div>
         </div>
     </section>
