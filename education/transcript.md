@@ -57,7 +57,8 @@
 - Term GPA: 2.750
 
 ### Prior Education
-- Coursework from Broome Community College
+- Associates in Health Science from Broom Community College
+- Certificate in Phlebotomy from Broom Community College
 - Coursework from Luzerne County Community College
 
 ---
