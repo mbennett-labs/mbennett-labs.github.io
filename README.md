@@ -13,7 +13,7 @@ I bring a unique perspective to software development through my diverse career p
 - Background in skilled trades including billboard installation, water system installation, and warehouse management
 - Current focus on software development with specialties in cybersecurity, blockchain, and AI applications
 
-Read my full career journey: [HackMD Career Journey](https://hackmd.io/@xbBf1zpRTXaSATerS04iJg/SJWiETHC1l)
+Read my full career journey: [HackMD Career Journey](https://hackmd.io/@BlocDev/HJqeav0oJe)
 
 ## 🛠️ Portfolio Features
 
