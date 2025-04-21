@@ -6,409 +6,479 @@
     <meta name="description" content="Michael Bennett - Software Developer & Security Specialist with a diverse professional background bringing unique perspectives to technical challenges">
     <meta name="keywords" content="software development, cybersecurity, blockchain, AI, full stack developer, Python, JavaScript">
     <title>Michael Bennett | Software Developer & Security Specialist</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .section-active {
+            border-bottom: 2px solid #1e40af;
+            color: #1e40af;
+        }
+        .nav-item {
+            transition: all 0.3s ease;
+            padding-bottom: 0.5rem;
+            margin-bottom: -2px;
+        }
+        .nav-item:hover {
+            border-bottom: 2px solid #93c5fd;
+            color: #1e40af;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .skill-category {
+            transition: transform 0.3s ease;
+        }
+        .skill-category:hover {
+            transform: scale(1.03);
+        }
+        .contact-link {
+            transition: all 0.3s ease;
+        }
+        .contact-link:hover {
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <div class="profile-images">
-                <div class="profile-image-left">
-                    <img src="profile.jpg" alt="Michael Bennett">
-                </div>
-                <div class="profile-content">
-                    <h1>Michael Bennett</h1>
-                    <h2>Software Developer & Security Specialist</h2>
-                    <p>From culinary kitchens to code repositories — bringing diverse perspectives to technical challenges</p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn">View Projects</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/mbennett-labs" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:mikebennett637@gmail.com" aria-label="Email Me"><i class="fas fa-envelope"></i></a>
-                        <a href="https://hackmd.io/@BlocDev/HJqeav0oJe" aria-label="Career Journey"><i class="fas fa-briefcase"></i></a>
-                    </div>
-                </div>
-                <div class="profile-image-right">
-                    <img src="profile2.jpg" alt="Michael Bennett">
+<body class="bg-gray-100 font-sans">
+<!-- Header section with profile images on both sides -->
+<header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+            <!-- Left profile image -->
+            <div class="mb-6 md:mb-0">
+                <img src="profile.jpg.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+            </div>
+            
+            <!-- Center content -->
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Michael Bennett</h1>
+                <p class="text-xl text-blue-200">Software Developer & Security Specialist</p>
+                <div class="flex space-x-4 mt-6 justify-center">
+                    <!-- Social links -->
+                    <a href="https://github.com/mbennett-labs/mbennett-labs" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="mailto:mikebennett637@gmail.com" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="tel:+12406598286" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                        <i class="fas fa-phone-alt text-xl"></i>
+                    </a>
                 </div>
             </div>
+            
+            <!-- Right profile image -->
+            <div class="mt-6 md:mt-0">
+                <img src="profile2.jpg.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+            </div>
         </div>
-    </header>
-
+    </div>
+</header>
+    
     <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#strengths">Personal Strengths</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="flex justify-center md:justify-start space-x-8 overflow-x-auto whitespace-nowrap">
+                <li><a href="#about" class="nav-item section-active text-blue-700 font-medium">About</a></li>
+                <li><a href="#experience" class="nav-item text-gray-600 font-medium">Experience</a></li>
+                <li><a href="#education" class="nav-item text-gray-600 font-medium">Education</a></li>
+                <li><a href="#skills" class="nav-item text-gray-600 font-medium">Skills</a></li>
+                <li><a href="#projects" class="nav-item text-gray-600 font-medium">Projects</a></li>
+                <li><a href="#contact" class="nav-item text-gray-600 font-medium">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a <strong>Software Developer and Security Specialist</strong> with a BS in Software Development & Security from University of Maryland Global Campus (May 2024). My journey into tech follows a successful career as an Executive Chef, where I developed strong operational efficiency, team leadership, and problem-solving skills.</p>
-                    <p>My diverse professional background has equipped me with unique perspectives on system design and operational workflows. I approach coding challenges with the same precision, efficiency, and problem-solving mindset that drove my success in previous roles.</p>
-                    <p>I specialize in cybersecurity, blockchain technology, AI applications, and full-stack development. My technical expertise combined with my operational experience makes me particularly effective at bridging the gap between technical solutions and practical business needs.</p>
-                    <p><a href="https://hackmd.io/@BlocDev/HJqeav0oJe" class="text-link"><i class="fas fa-external-link-alt"></i> Read my full career journey</a> to learn how my diverse background strengthens my approach to technology.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personal Strengths Section -->
-    <section id="strengths" class="strengths-section">
-        <div class="container">
-            <h2>Personal Strengths</h2>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-users"></i>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- About Section -->
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">About Me</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <p class="text-gray-700 text-lg text-center mb-6">
+                    Software Developer and Security Specialist leveraging 10+ years of leadership experience 
+                    from a successful culinary career, seeking blockchain, cybersecurity, or full-stack development opportunities.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    My unique background combines technical expertise from my BS in Software Development & Security 
+                    with operational excellence managing high-pressure environments and cross-functional teams. I 
+                    approach coding challenges with the same precision, efficiency, and problem-solving mindset that drove 
+                    my culinary success.
+                </p>
+                
+                <h3 class="text-2xl font-semibold text-center mb-6">Core Competencies:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-shield-alt text-2xl"></i></div>
+                        <h4 class="font-semibold">Cybersecurity & Secure Development</h4>
                     </div>
-                    <h3>People Person</h3>
-                    <p>My ability to connect with diverse teams and stakeholders makes me effective at collaborative projects and client-facing roles. I excel at clear communication across technical knowledge gaps.</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-book"></i>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-layer-group text-2xl"></i></div>
+                        <h4 class="font-semibold">Full Stack Development</h4>
                     </div>
-                    <h3>Self-Learner</h3>
-                    <p>Throughout my career transitions, I've demonstrated exceptional ability to master new skills and domains quickly. I stay current with emerging technologies and industry trends through self-directed learning.</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-tools"></i>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-link text-2xl"></i></div>
+                        <h4 class="font-semibold">Blockchain Technology</h4>
                     </div>
-                    <h3>Problem Solver</h3>
-                    <p>I've always enjoyed taking things apart to understand how they work. This innate curiosity combined with systematic troubleshooting skills helps me solve complex technical challenges efficiently.</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-handshake"></i>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-brain text-2xl"></i></div>
+                        <h4 class="font-semibold">AI & Machine Learning</h4>
                     </div>
-                    <h3>Loyalty & Dedication</h3>
-                    <p>Once I commit to a team or project, I give it my full attention and effort. I take ownership of my responsibilities and see things through to successful completion.</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-mountain"></i>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-users text-2xl"></i></div>
+                        <h4 class="font-semibold">Team Leadership</h4>
                     </div>
-                    <h3>Challenge Seeker</h3>
-                    <p>I thrive in environments that present novel problems and opportunities for growth. I approach difficult situations as chances to expand my capabilities and knowledge.</p>
-                </div>
-                <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Strong Work Ethic</h3>
-                    <p>From my years in high-pressure kitchens to technical problem-solving, I bring consistency, reliability, and determination to every role I undertake.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">JavaScript</span>
-                        <span class="skill-pill">TypeScript</span>
-                        <span class="skill-pill">HTML/CSS</span>
-                        <span class="skill-pill">SQL</span>
-                        <span class="skill-pill">Rust</span>
-                        <span class="skill-pill">C++</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Secure Coding</span>
-                        <span class="skill-pill">Vulnerability Assessment</span>
-                        <span class="skill-pill">Network Security</span>
-                        <span class="skill-pill">Auth Systems</span>
-                        <span class="skill-pill">Security Testing</span>
-                        <span class="skill-pill">Risk Management</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-link"></i> Blockchain</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Smart Contracts</span>
-                        <span class="skill-pill">Ethereum</span>
-                        <span class="skill-pill">Celestia</span>
-                        <span class="skill-pill">Node Operations</span>
-                        <span class="skill-pill">Web3</span>
-                        <span class="skill-pill">Cryptocurrency</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">AI Agents</span>
-                        <span class="skill-pill">Swarm Intelligence</span>
-                        <span class="skill-pill">Machine Learning</span>
-                        <span class="skill-pill">Transformers</span>
-                        <span class="skill-pill">Model Training</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Full Stack</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Node.js</span>
-                        <span class="skill-pill">React</span>
-                        <span class="skill-pill">Database Design</span>
-                        <span class="skill-pill">API Development</span>
-                        <span class="skill-pill">System Architecture</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users-cog"></i> Soft Skills</h3>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Team Leadership</span>
-                        <span class="skill-pill">Problem-Solving</span>
-                        <span class="skill-pill">Communication</span>
-                        <span class="skill-pill">Process Optimization</span>
-                        <span class="skill-pill">Rapid Learning</span>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center">
+                        <div class="text-blue-700 mb-2"><i class="fas fa-chart-line text-2xl"></i></div>
+                        <h4 class="font-semibold">Process Optimization</h4>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Secure Blog Platform</h3>
-                    <p>A blogging platform built with security as the primary focus, featuring modern authentication methods, data encryption, and protection against common web vulnerabilities.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Security</span>
-                        <span class="project-tag">Full Stack</span>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Professional Experience</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <!-- Job 1 -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Independent Technology Consultant</h3>
+                            <p class="text-gray-600">Self-employed</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                2020 - Present
+                            </span>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mbennett-labs/secure-blog-platform" class="btn btn-sm">View Code <i class="fab fa-github"></i></a>
-                        <a href="#" class="btn btn-sm btn-outline">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Developed personal projects to build practical experience in software development</li>
+                        <li>Created automated solutions for small business inventory management</li>
+                        <li>Designed and implemented custom database solutions for resource tracking</li>
+                        <li>Built secure web applications focusing on data protection and best practices</li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <h3>Ethereum Smart Contracts</h3>
-                    <p>Collection of Ethereum smart contracts implementing various use cases with a focus on security best practices, gas optimization, and real-world applications.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Solidity</span>
-                        <span class="project-tag">Blockchain</span>
-                        <span class="project-tag">Smart Contracts</span>
-                        <span class="project-tag">Web3</span>
+                
+                <!-- Job 2 -->
+                <div>
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold">Executive Chef & Kitchen Operations Manager</h3>
+                            <p class="text-gray-600">The Passenger</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                2018 - 2019
+                            </span>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mbennett-labs/ethereum-smart-contracts" class="btn btn-sm">View Code <i class="fab fa-github"></i></a>
-                        <a href="https://hackmd.io/@mbennett/ethereum-contracts" class="btn btn-sm btn-outline">Documentation <i class="fas fa-file-alt"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Swarm Agents</h3>
-                    <p>Modular, extensible framework for collaborative AI agent systems inspired by swarm intelligence in nature, featuring specialist agents with unique capabilities.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">AI</span>
-                        <span class="project-tag">LLM</span>
-                        <span class="project-tag">Agents</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mbennett-labs/swarm-agents" class="btn btn-sm">View Code <i class="fab fa-github"></i></a>
-                        <a href="https://hackmd.io/@mbennett/swarm-agents" class="btn btn-sm btn-outline">Documentation <i class="fas fa-file-alt"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Celestia Light Node</h3>
-                    <p>Resource-optimized Celestia Light Node implementation with custom monitoring dashboard for VPS environments, featuring professional systemd service management.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Go</span>
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">DevOps</span>
-                        <span class="project-tag">Blockchain</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mbennett-labs/celestia-node-project" class="btn btn-sm">View Code <i class="fab fa-github"></i></a>
-                        <a href="https://hackmd.io/@mbennett/celestia-node" class="btn btn-sm btn-outline">Documentation <i class="fas fa-file-alt"></i></a>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Developed inventory tracking systems reducing waste by 15%</li>
+                        <li>Managed team scheduling and resource allocation using data-driven decision making</li>
+                        <li>Designed systematic workflows ensuring consistent quality delivery</li>
+                        <li>Conducted regular data analysis of costs and sales trends</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="https://hackmd.io/@BlocDev/SJWiETHC1l" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Read my full career journey
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="view-all">
-                <a href="https://github.com/mbennett-labs" class="btn">View All Projects <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-content">
-                <div class="education-item">
-                    <h3>Bachelor of Science</h3>
-                    <div class="institution">University of Maryland Global Campus</div>
-                    <div class="degree">Software Development and Security</div>
-                    <div class="date">Graduated May 2024 | GPA: 3.053</div>
-                    <div class="course-highlights">
-                        <h4>Key Achievements:</h4>
-                        <ul>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Education</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <!-- Degree 1 -->
+                <div class="mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-700 mr-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Bachelor of Science</h3>
+                            <p class="text-gray-700">Software Development and Security</p>
+                            <p class="text-gray-600">University of Maryland Global Campus</p>
+                            <p class="text-gray-600">Graduated May 2024 | GPA: 3.053</p>
+                        </div>
+                    </div>
+                    <div class="ml-12">
+                        <h4 class="font-semibold mb-2">Key Achievements:</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
                             <li>Straight A's in all technical courses for final three semesters</li>
-                            <li>Perfect 4.0 GPA in final two semesters</li>
-                            <li>Excellence in advanced security and software development courses</li>
-                            <li>Strong performance in AI-focused coursework</li>
+                            <li>Excellence in advanced security and software development</li>
                         </ul>
-                        <a href="education/transcript.md" class="btn btn-sm">View Academic Transcript <i class="fas fa-file-alt"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <h2>Professional Journey</h2>
-            <div class="experience-content">
-                <div class="experience-intro">
-                    <p>My career path spans diverse industries—from retail to skilled trades to culinary leadership before transitioning to technology. This unconventional journey has equipped me with unique perspectives and transferable skills that I apply to software development, security, and blockchain projects.</p>
-                    <a href="https://hackmd.io/@BlocDev/HJqeav0oJe" class="btn">Read My Full Career Journey <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="experience-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-laptop-code"></i>
+                
+                <!-- Degree 2 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-700 mr-4">
+                            <i class="fas fa-university text-3xl"></i>
                         </div>
-                        <div class="timeline-content">
-                            <h3>Technology Career</h3>
-                            <div class="timeline-date">2020 - Present</div>
-                            <p>Transitioning to software development with focus on cybersecurity, blockchain, and AI applications. Building practical experience through educational projects and independent consulting.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Executive Chef & Kitchen Operations Manager</h3>
-                            <div class="timeline-date">2018 - 2019</div>
-                            <p>Led kitchen operations at The Passenger, developing inventory systems, managing team scheduling, and optimizing workflows through data-driven decision making.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Skilled Trades & Physical Work</h3>
-                            <div class="timeline-date">1990s - 2000s</div>
-                            <p>Diverse roles including billboard poster, water system technician, warehouse management, and construction, developing practical problem-solving and technical skills.</p>
-                            <ul class="timeline-details">
-                                <li><strong>Park Outdoor:</strong> Billboard poster installation and maintenance</li>
-                                <li><strong>Culligan Water:</strong> Delivery driver and water system installation technician</li>
-                                <li><strong>Williams Door:</strong> Warehouse, delivery, shipping, forklift operation and construction</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Early Retail Experience</h3>
-                            <div class="timeline-date">1988 - 1990</div>
-                            <p>Started professional journey at Dallas Centre Hardware (True Value) as a hardware store clerk, learning customer service fundamentals and inventory management.</p>
+                        <div>
+                            <h3 class="text-2xl font-semibold">Associate of Science</h3>
+                            <p class="text-gray-700">Health Science</p>
+                            <p class="text-gray-600">SUNY Broome Community College</p>
+                            <p class="text-gray-600">2011-2014</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-        <div class="container">
-            <h2>Tech Blog</h2>
-            <div class="blog-content">
-                <p class="blog-intro">I share insights on AI, blockchain technology, and security on my biweekly blog.</p>
-                <div class="blog-grid">
-                    <div class="blog-card">
-                        <h3>Welcome to MB Tech Blog</h3>
-                        <div class="blog-meta">March 16, 2025 | Tech, Introduction</div>
-                        <p>Exploring cutting-edge developments in AI, blockchain, and quantum computing with biweekly insights, code examples and practical tutorials.</p>
-                        <a href="blog/welcome-to-tech-blog.html" class="btn btn-sm">Read Post <i class="fas fa-arrow-right"></i></a>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Programming -->
+                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
+                            <i class="fas fa-code text-blue-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Programming</h3>
                     </div>
-                    <div class="blog-card">
-                        <h3>Coming Soon: More Tech Insights</h3>
-                        <div class="blog-meta">Upcoming Posts</div>
-                        <p>Stay tuned for upcoming articles on securing blockchain applications, AI agent implementation, and practical coding tutorials.</p>
+                    <p class="text-gray-700 text-center">
+                        Python JavaScript SQL HTML/CSS TypeScript
+                    </p>
+                </div>
+                
+                <!-- Security -->
+                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
+                            <i class="fas fa-shield-alt text-blue-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Security</h3>
+                    </div>
+                    <p class="text-gray-700 text-center">
+                        Network Security Vulnerability Assessment Risk Management Secure Coding
+                    </p>
+                </div>
+                
+                <!-- Blockchain/Web3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
+                            <i class="fas fa-link text-blue-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Blockchain/Web3</h3>
+                    </div>
+                    <p class="text-gray-700 text-center">
+                        Smart Contracts Cryptocurrency NFT Infrastructure
+                    </p>
+                </div>
+                
+                <!-- AI/ML -->
+                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
+                    <div class="text-center mb-4">
+                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
+                            <i class="fas fa-brain text-blue-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">AI/ML</h3>
+                    </div>
+                    <p class="text-gray-700 text-center">
+                        AI Agents Swarm Intelligence Machine Learning Hugging Face Transformers
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI Model Development</h3>
+                        <p class="text-gray-600 mb-2">Hugging Face</p>
+                        <p class="text-gray-700 mb-4">
+                            Exploring and developing machine learning models using Hugging Face's transformers library and model hub.
+                        </p>
+                        <div class="text-gray-600 font-medium mb-4">AI ML Python Transformers</div>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 mb-4">
+                            <li>Implemented custom ML models</li>
+                            <li>Explored transformer architectures</li>
+                            <li>Published models on Hugging Face Hub</li>
+                        </ul>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center mb-2">
+                            View on Hugging Face
+                            <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                        <a href="https://hackmd.io/9vZWdiLSSyunNNvpjY3UTw" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Project Documentation
+                            <i class="fas fa-file-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Swarm Agents</h3>
+                        <p class="text-gray-600 mb-2">Multi-Agent AI System</p>
+                        <p class="text-gray-700 mb-4">
+                            Modular, extensible framework for collaborative AI agent systems inspired by swarm intelligence in nature.
+                        </p>
+                        <div class="text-gray-600 font-medium mb-4">Python AI LLM Agents</div>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 mb-4">
+                            <li>Designed triage system for intelligent query routing</li>
+                            <li>Implemented specialist agents with unique capabilities</li>
+                            <li>Created shared memory system for agent collaboration</li>
+                        </ul>
+                        <a href="https://github.com/mbennett-labs/mbennett-labs" class="text-blue-600 hover:text-blue-800 font-medium flex items-center mb-2">
+                            View on GitHub
+                            <i class="fab fa-github ml-1"></i>
+                        </a>
+                        <a href="https://hackmd.io/@xbBf1zpRTXaSATerS04iJg/HkeOGwd6yg" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Project Documentation
+                            <i class="fas fa-file-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Celestia Light Node Implementation</h3>
+                        <p class="text-gray-600 mb-2">Blockchain Infrastructure</p>
+                        <p class="text-gray-700 mb-4">
+                            Professional implementation of a Celestia Light Node with resource-optimized monitoring dashboard for VPS environments.
+                        </p>
+                        <div class="text-gray-600 font-medium mb-4">Go Node.js DevOps Blockchain</div>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 mb-4">
+                            <li>Implemented resource constraints for shared VPS hosting</li>
+                            <li>Created custom real-time monitoring dashboard</li>
+                            <li>Applied professional systemd service management</li>
+                        </ul>
+                        <a href="https://github.com/mbennett-labs/celestia-node-project" class="text-blue-600 hover:text-blue-800 font-medium flex items-center mb-2">
+                            View on GitHub
+                            <i class="fab fa-github ml-1"></i>
+                        </a>
+                        <a href="https://hackmd.io/@xbBf1zpRTXaSATerS04iJg/By9lgOuaJg" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Project Documentation
+                            <i class="fas fa-file-alt ml-1"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <div class="contact-content">
-                <p>I'm currently open to new opportunities in software development, security, and blockchain projects. Let's discuss how my unique background and technical skills can benefit your team or project.</p>
-                <div class="contact-links">
-                    <a href="mailto:mikebennett637@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>mikebennett637@gmail.com</span>
+            <div class="text-center mt-8">
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View All Projects</a>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Let's Connect</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <p class="text-gray-700 text-center mb-8">
+                    I'm currently open to new opportunities in software development and security. Let's discuss how my unique background can benefit your team.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <a href="mailto:mikebennett637@gmail.com" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Email</h3>
+                        <p class="text-gray-700 text-center">mikebennett637@gmail.com</p>
                     </a>
-                    <a href="tel:+12406598286" class="contact-link">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>(240) 659-8286</span>
+                    
+                    <a href="tel:+12406598286" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                        <p class="text-gray-700 text-center">(240) 659-8286</p>
                     </a>
-                    <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" class="contact-link">
-                        <i class="fab fa-linkedin-in"></i>
-                        <span>LinkedIn Profile</span>
+                    
+                    <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                        <p class="text-gray-700 text-center">Connect with me</p>
                     </a>
-                    <a href="https://github.com/mbennett-labs" class="contact-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub Profile</span>
+                    
+                    <a href="https://github.com/mbennett-labs/mbennett-labs" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
+                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
+                            <i class="fab fa-github text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                        <p class="text-gray-700 text-center">View my code</p>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    
     <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer class="bg-blue-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
             <p>&copy; 2025 Michael Bennett. All rights reserved.</p>
-            <a href="https://github.com/mbennett-labs/mbennett-labs.github.io" class="footer-link">View This Site's Source Code</a>
+            <p class="mt-2 text-blue-200">
+                <a href="https://github.com/mbennett-labs/mbennett-labs" class="hover:text-white transition-colors duration-300">https://github.com/mbennett-labs/mbennett-labs</a>
+            </p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <script>
+        // Simple navigation highlighting
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            // On scroll, highlight the corresponding nav item
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('section-active', 'text-blue-700');
+                    item.classList.add('text-gray-600');
+                    if (item.getAttribute('href').substring(1) === current) {
+                        item.classList.add('section-active', 'text-blue-700');
+                        item.classList.remove('text-gray-600');
+                    }
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            navItems.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
