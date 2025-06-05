@@ -1,4 +1,3 @@
-
 # Michael Bennett's Professional Portfolio
 
 **Founder & CEO of Quantum Shield Labs LLC**
@@ -7,7 +6,7 @@ This repository hosts my professional portfolio website, showcasing my backgroun
 
 ## 🌐 Live Website
 
-**Visit my portfolio:** [mbennett-labs.github.io](https://mbennett-labs.github.io)
+**🌐 Visit my live portfolio:** [https://mbennett-labs.github.io](https://mbennett-labs.github.io)
 
 ## 🚀 Current Work & Company
 
