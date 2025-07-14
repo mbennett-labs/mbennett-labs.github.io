@@ -496,3 +496,28 @@
                 navItems.forEach(item => {
                     item.classList.remove('section-active', 'text-blue-700');
                     item.classList.add('text-gray-600');
+                    if (item.getAttribute('href').substring(1) === current) {
+                        item.classList.add('section-active', 'text-blue-700');
+                        item.classList.remove('text-gray-600');
+                    }
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            navItems.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
