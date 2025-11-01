@@ -13,7 +13,7 @@ This repository hosts my professional portfolio website, showcasing my backgroun
 **Quantum Shield Labs LLC** - AI-powered security solutions company
 - **Flagship Product**: [AI Calendar Assistant](https://github.com/mbennett-labs/ai-assistant-michael) - Production AI application with Google Calendar integration
 - **Company Website**: [quantumshieldlabs.dev](https://quantumshieldlabs.dev/git-site/)
-- **Educational Platform**: [Quantum Security Blog](https://quantumshieldlabs.dev/git-site/blog/)
+- **Educational Platform**: [Quantum Security Blog](https://quantumshieldlabs.dev/blog/)
 
 ## 🧠 My Professional Journey
 
