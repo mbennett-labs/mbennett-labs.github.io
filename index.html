@@ -41,6 +41,14 @@
         .contact-link:hover {
             transform: translateY(-3px);
         }
+        .featured-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -91,6 +99,7 @@
                 <li><a href="#education" class="nav-item text-gray-600 font-medium">Education</a></li>
                 <li><a href="#skills" class="nav-item text-gray-600 font-medium">Skills</a></li>
                 <li><a href="#projects" class="nav-item text-gray-600 font-medium">Projects</a></li>
+                <li><a href="contributions.html" class="nav-item text-gray-600 font-medium" style="color: #667eea;">Open Source</a></li>
                 <li><a href="#contact" class="nav-item text-gray-600 font-medium">Contact</a></li>
             </ul>
         </div>
@@ -333,8 +342,37 @@
         <!-- Projects Section -->
         <section id="projects" class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Featured Projects</h2>
+            
+            <!-- NEW: Open Source Contributions Featured Card -->
+            <div class="mb-8 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md overflow-hidden border-2 border-purple-200">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-700 mb-2">Open Source Contributions</h3>
+                            <span class="featured-badge">Featured</span>
+                        </div>
+                        <div class="text-4xl text-purple-300">
+                            <i class="fab fa-github-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-lg">
+                        Active open source contributor with merged PRs to major projects. View my contributions to the Coinbase x402 ecosystem, blockchain infrastructure, and other significant open source projects.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1 mb-6">
+                        <li>Coinbase x402 Ecosystem - QuantumShield API integration</li>
+                        <li>Blockchain infrastructure and Web3 projects</li>
+                        <li>Security-focused tools and frameworks</li>
+                        <li>Full-stack applications with verified commits</li>
+                    </ul>
+                    <a href="contributions.html" class="inline-block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all duration-300">
+                        View Open Source Portfolio
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Project 1 - NEW: Quantum Shield Labs AI Assistant -->
+                <!-- Project 1 - Quantum Shield Labs AI Assistant -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden card">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">AI Calendar Assistant</h3>
@@ -511,10 +549,12 @@
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
 
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
         });
