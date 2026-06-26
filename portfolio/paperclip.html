@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paperclip — AI operations control plane for running, governing, and scaling autonomous AI workforces.">
+    <title>Paperclip | Case Study | Michael Bennett</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-item { transition: all 0.3s ease; padding-bottom: 0.5rem; margin-bottom: -2px; }
+        .nav-item:hover { border-bottom: 2px solid #93c5fd; color: #1e40af; }
+        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .contact-link { transition: all 0.3s ease; }
+        .contact-link:hover { transform: translateY(-3px); }
+        .section-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
+        .screenshot-card { border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; background: white; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+                <div class="mb-6 md:mb-0"><img src="../profile.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"></div>
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold mb-4">Michael Bennett</h1>
+                    <p class="text-xl text-blue-200">Software Developer & Security Specialist</p>
+                    <div class="flex space-x-4 mt-6 justify-center">
+                        <a href="https://github.com/mbennett-labs/mbennett-labs" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors"><i class="fas fa-envelope text-xl"></i></a>
+                        <a href="tel:+12406598286" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors"><i class="fas fa-phone-alt text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0"><img src="../profile2.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="flex justify-center md:justify-start space-x-8 overflow-x-auto whitespace-nowrap">
+                <li><a href="../index.html" class="nav-item text-blue-700 font-medium"><i class="fas fa-arrow-left mr-2"></i>Home</a></li>
+                <li><a href="../index.html#projects" class="nav-item text-gray-600 font-medium">Projects</a></li>
+                <li><span class="nav-item text-gray-800 font-medium border-b-2 border-blue-700">Paperclip</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8 text-gray-600 text-sm">
+            <a href="../index.html" class="text-blue-600 hover:text-blue-800">Home</a> <span class="mx-2">/</span>
+            <a href="../index.html#projects" class="text-blue-600 hover:text-blue-800">Projects</a> <span class="mx-2">/</span>
+            <span class="text-gray-800 font-medium">Paperclip</span>
+        </div>
+
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-700 mb-2">Paperclip</h2>
+                        <p class="text-gray-600 text-lg">AI Operations Control Plane</p>
+                    </div>
+                    <div class="mt-4 md:mt-0"><span class="section-badge">Case Study</span></div>
+                </div>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Paperclip is a single-tenant control plane for running autonomous AI companies.
+                    It provides the corporate equivalent of a boardroom, HR department, finance controller, and project management office — expressed as real software.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">TypeScript</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">React</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Express</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Drizzle ORM</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 card">
+                <div class="text-blue-700 mb-4"><i class="fas fa-exclamation-triangle text-2xl"></i></div>
+                <h3 class="text-2xl font-semibold mb-4">The Problem</h3>
+                <p class="text-gray-700 mb-4">Task management software does not go far enough. When your workforce is AI agents, you need more than a to-do list.</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>AI coding assistants run ad-hoc single-session loops with no company structure, cost controls, or governance</li>
+                    <li>Project management tools are designed for human teams and cannot orchestrate autonomous agent execution loops</li>
+                    <li>Neither category provides what autonomous companies need: a structured, governable operating system for AI labor</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 card">
+                <div class="text-blue-700 mb-4"><i class="fas fa-check-circle text-2xl"></i></div>
+                <h3 class="text-2xl font-semibold mb-4">What Paperclip Is</h3>
+                <p class="text-gray-700 mb-4">A single-tenant control plane for running autonomous AI companies. One instance manages multiple companies, each with its own org chart, agent workforce, task hierarchy, budget, and governance rules.</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Paperclip does NOT run agents — it orchestrates them</li>
+                    <li>Agents execute wherever they run and phone home to Paperclip's REST API</li>
+                    <li>Separation of control plane from execution plane enables general-purpose adapters</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Architecture at a Glance</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <pre class="bg-gray-50 rounded-lg p-4 text-sm text-gray-800 overflow-x-auto">
+               Board Operator (Web UI)
+                        |
+         +--------------+--------------+
+         |              |              |
+    Dashboard     Org Chart    Task Board  Approvals  Costs
+         |              |              |          |       |
+         +--------------+--------------+----------+-------+
+                        |
+                  Paperclip REST API (/api)
+                        |
+         +--------------+--------------+
+         |              |              |
+    Companies      Agents          Issues       Projects
+    Goals          Heartbeats      Costs        Activity
+         |              |              |
+         +--------------+--------------+
+                        |
+             PostgreSQL (embedded or hosted)
+                        |
+     +------------------+------------------+
+     |                   |                   |
+  Claude Code        Codex CLI         Cursor CLI
+     |                   |                   |
+     +-------------------+-------------------+
+              Agent Execution Plane
+        (agents run independently, phone home via API)
+                </pre>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Key Capabilities</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <table class="w-full text-left text-gray-700">
+                    <tbody>
+                        <tr class="border-b"><td class="px-6 py-4 font-semibold w-1/3">Company Management</td><td class="px-6 py-4">Multi-company data model; create, configure, archive, import/export portable company packages.</td></tr>
+                        <tr class="border-b bg-gray-50"><td class="px-6 py-4 font-semibold">Agent Workforce</td><td class="px-6 py-4">10 adapter types (Claude, Codex, Cursor, Gemini, OpenCode, Pi, OpenClaw, Hermes, HTTP, process); org tree with strict reporting hierarchy; heartbeat-based invocation with configurable schedules.</td></tr>
+                        <tr class="border-b"><td class="px-6 py-4 font-semibold">Task System</td><td class="px-6 py-4">Hierarchical task trees tracing to company goals; single-assignee with atomic checkout; full lifecycle states (backlog &rarr; todo &rarr; in_progress &rarr; in_review &rarr; done); comments, attachments, and linked documents.</td></tr>
+                        <tr class="border-b bg-gray-50"><td class="px-6 py-4 font-semibold">Cost Controls</td><td class="px-6 py-4">Per-agent, per-project, per-company budgets in dollars + tokens; soft alerts at configurable thresholds; hard-limit auto-pause at 100% utilization; cost event ingestion from any provider/model.</td></tr>
+                        <tr class="border-b"><td class="px-6 py-4 font-semibold">Board Governance</td><td class="px-6 py-4">Human board operator with full-system visibility and override authority; approval gates for agent hiring and CEO strategy proposals; irreversible agent termination; every mutation written to an audit trail.</td></tr>
+                        <tr class="border-b bg-gray-50"><td class="px-6 py-4 font-semibold">Plugins & Extensibility</td><td class="px-6 py-4">Plugin SDK (define plugin workers + UI components); external adapter registry for third-party agent runtimes; sandbox provider integration (E2B); MCP protocol server exposing 37 tools to AI agents.</td></tr>
+                        <tr><td class="px-6 py-4 font-semibold">Dashboard & Visibility</td><td class="px-6 py-4">Real-time dashboard with agent counts, issue statuses, MTD spend, budget utilization, and pending approvals; live dashboard with WebSocket updates; activity audit stream; org chart visualization.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Use Cases</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-building text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Managed Service Providers</h3>
+                    <p class="text-gray-700 text-sm">Operate AI-powered service teams for multiple clients simultaneously. Per-client cost isolation, agent template reuse, and activity audit for SLAs.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-shield-alt text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Security Operations</h3>
+                    <p class="text-gray-700 text-sm">Agent hierarchy for escalation, secret management with encryption, budget hard-stops for investigation bursts, and complete audit trails for SOC 2 compliance.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-pen-nib text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Content Operations</h3>
+                    <p class="text-gray-700 text-sm">Brand-level isolation via companies, editorial review via issue status workflow, documents as first-class work products with revision control, and per-brand cost attribution.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-layer-group text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Multi-Company Orchestration</h3>
+                    <p class="text-gray-700 text-sm">Portfolio-level cost visibility, company portability for spin-offs, cross-company agent transfer, and board-level resource reallocation across ventures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Technical Foundation</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Frontend</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>React + Vite SPA with 45+ distinct page routes</li>
+                            <li>TanStack Query, Tailwind CSS, shadcn/ui components</li>
+                            <li>WebSocket live updates for real-time activity streams</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Backend</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>TypeScript + Express REST API (38 route modules, 106 service modules)</li>
+                            <li>Better Auth for session management</li>
+                            <li>Company-scoping enforced in every database query</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Database</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>Drizzle ORM with 75 schema tables, 73 migrations</li>
+                            <li>PostgreSQL: embedded PGlite (dev), Docker (local), Supabase/cloud (production)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Adapters & Testing</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>Pluggable adapter interface: invoke/status/cancel</li>
+                            <li>Vitest unit/integration + Playwright e2e suites</li>
+                            <li>OpenClaw smoke test harness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/paperclip/dashboard-overview.png" alt="Paperclip dashboard overview" class="w-full object-cover">
+                    <div class="p-4"><p class="text-sm text-gray-600">Operations dashboard with agent counts, issue statuses, and budget utilization.</p></div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/paperclip/event-detail.png" alt="Event detail panel" class="w-full object-cover">
+                    <div class="p-4"><p class="text-sm text-gray-600">Event detail panel with governance metadata and approval chain.</p></div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/paperclip/replay-active.png" alt="Replay active view" class="w-full object-cover">
+                    <div class="p-4"><p class="text-sm text-gray-600">Active replay of decision sequences for audit reconstruction.</p></div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/paperclip/timeline-ui-full.png" alt="Full timeline UI" class="w-full object-cover">
+                    <div class="p-4"><p class="text-sm text-gray-600">Full timeline view with event lineage and validation status.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg shadow-md p-8 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Build Governable AI Infrastructure</h2>
+                <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Interested in multi-agent orchestration, cost-controlled AI operations, or governance-ready control planes? Let's discuss how Paperclip's architecture applies to your needs.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all"><i class="fas fa-envelope mr-2"></i>Email Me</a>
+                    <a href="tel:+12406598286" class="bg-blue-600 border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition-all"><i class="fas fa-phone-alt mr-2"></i>(240) 659-8286</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Michael Bennett. All rights reserved.</p>
+            <p class="mt-2 text-blue-200"><a href="https://quantumshieldlabs.dev" class="hover:text-white transition-colors">quantumshieldlabs.dev</a> | <a href="https://github.com/mbennett-labs" class="hover:text-white transition-colors">github.com/mbennett-labs</a></p>
+        </div>
+    </footer>
+</body>
+</html>
