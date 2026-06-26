@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuantumShield Core — Governed AI security operations with human-in-the-loop enforcement and replay-capable audit trails.">
+    <title>QuantumShield Core | Case Study | Michael Bennett</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-item {
+            transition: all 0.3s ease;
+            padding-bottom: 0.5rem;
+            margin-bottom: -2px;
+        }
+        .nav-item:hover {
+            border-bottom: 2px solid #93c5fd;
+            color: #1e40af;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .contact-link {
+            transition: all 0.3s ease;
+        }
+        .contact-link:hover {
+            transform: translateY(-3px);
+        }
+        .live-badge {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .section-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        .screenshot-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+                <div class="mb-6 md:mb-0">
+                    <img src="../profile.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold mb-4">Michael Bennett</h1>
+                    <p class="text-xl text-blue-200">Software Developer & Security Specialist</p>
+                    <div class="flex space-x-4 mt-6 justify-center">
+                        <a href="https://github.com/mbennett-labs/mbennett-labs" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="tel:+12406598286" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <img src="../profile2.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="flex justify-center md:justify-start space-x-8 overflow-x-auto whitespace-nowrap">
+                <li><a href="../index.html" class="nav-item text-blue-700 font-medium"><i class="fas fa-arrow-left mr-2"></i>Home</a></li>
+                <li><a href="../index.html#projects" class="nav-item text-gray-600 font-medium">Projects</a></li>
+                <li><span class="nav-item text-gray-800 font-medium border-b-2 border-blue-700">QuantumShield Core</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
+        <div class="mb-8 text-gray-600 text-sm">
+            <a href="../index.html" class="text-blue-600 hover:text-blue-800">Home</a>
+            <span class="mx-2">/</span>
+            <a href="../index.html#projects" class="text-blue-600 hover:text-blue-800">Projects</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-800 font-medium">QuantumShield Core</span>
+        </div>
+
+        <!-- Hero -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-700 mb-2">QuantumShield Core</h2>
+                        <p class="text-gray-600 text-lg">Governed AI Security Operations</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="section-badge">Case Study</span>
+                    </div>
+                </div>
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    A 4,251-line Python security operations platform where AI detects threats and humans approve actions.
+                    Every decision traces to a named human with documented reasoning — audit-ready by design, not by accident.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Python</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Governance Architecture</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Human-in-the-Loop</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">Audit Trail</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem / Solution -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 card">
+                <div class="text-blue-700 mb-4"><i class="fas fa-exclamation-triangle text-2xl"></i></div>
+                <h3 class="text-2xl font-semibold mb-4">The Problem</h3>
+                <p class="text-gray-700 mb-4">
+                    Most AI security tools promise autonomy. When a regulator asks "who approved this?"
+                    the answer is often "the model decided" — the wrong answer for regulated industries.
+                </p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Alert fatigue overwhelms security teams</li>
+                    <li>Audit trails are optional, not enforced</li>
+                    <li>AI decisions lack human accountability</li>
+                    <li>Configuration can bypass oversight gates</li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 card">
+                <div class="text-blue-700 mb-4"><i class="fas fa-check-circle text-2xl"></i></div>
+                <h3 class="text-2xl font-semibold mb-4">The Solution</h3>
+                <p class="text-gray-700 mb-4">
+                    QuantumShield Core implements governed AI architecture: AI recommends, humans decide,
+                    and every decision is recorded in an append-only audit trail.
+                </p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Hard-gate human approval enforced in code, not policy</li>
+                    <li>Every finding requires human sign-off before delivery</li>
+                    <li>Named operator, timestamp, and reasoning on every approval</li>
+                    <li>Full decision chain replay from event logs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Key Capabilities -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Key Capabilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-user-shield text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Human-in-the-Loop</h3>
+                    <p class="text-gray-700 text-sm">
+                        Approval gates that cannot be bypassed by configuration. No gate, no action.
+                        Every finding requires human sign-off before delivery.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-history text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Replay-Capable Audit Trail</h3>
+                    <p class="text-gray-700 text-sm">
+                        Append-only event log with immutable records. Any decision chain can be
+                        replayed from the event log with operator identity and reasoning.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-lock text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">37 Governance Controls</h3>
+                    <p class="text-gray-700 text-sm">
+                        Documented safety and boundary controls across security, permissions,
+                        human review, governance, data handling, and operational boundaries.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-shield-alt text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Zero-Trust Model</h3>
+                    <p class="text-gray-700 text-sm">
+                        All inputs treated as untrusted. No automatic execution of external code.
+                        3-tier permission system with 6 categorically blocked actions.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-brain text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Learning Engine</h3>
+                    <p class="text-gray-700 text-sm">
+                        Governance feedback loop where approvals feed into confidence scoring.
+                        Learning rules are transparent and auditable, not a black box.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-flask text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Synthetic Lab Environment</h3>
+                    <p class="text-gray-700 text-sm">
+                        5 training scenarios with governance arc objectives and readiness checklists.
+                        Risk-based scoring with severity classification from INFO to HIGH.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Architecture & Controls</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Permission Tiers</h3>
+                        <table class="w-full text-sm text-left text-gray-700">
+                            <thead class="bg-gray-50">
+                                <tr><th class="px-4 py-2">Tier</th><th class="px-4 py-2">Actions</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t"><td class="px-4 py-2 font-medium text-green-700">Auto-Allowed</td><td class="px-4 py-2">Fast scans, format reports, detect changes</td></tr>
+                                <tr class="border-t"><td class="px-4 py-2 font-medium text-yellow-700">Approval Required</td><td class="px-4 py-2">Deep scans, add targets, send alerts, create issues</td></tr>
+                                <tr class="border-t"><td class="px-4 py-2 font-medium text-red-700">Blocked</td><td class="px-4 py-2">Delete files, modify firewall, run exploits, shell commands, access secrets, push to main</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Trust Boundaries</h3>
+                        <p class="text-gray-700 text-sm mb-4">11 defined trust boundaries ensure safe operation:</p>
+                        <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                            <li>Customer network isolation</li>
+                            <li>Observer mode (read-only, no credentials)</li>
+                            <li>Permission tier enforcement</li>
+                            <li>Approval gate (hard gate, no bypass)</li>
+                            <li>Constitutional role separation</li>
+                            <li>Automation boundaries</li>
+                            <li>Suppression and policy override controls</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">Safe Engagement Model</h4>
+                    <p class="text-gray-700 text-sm">Read-only observation. No authentication attempts. No software installation. No data transmission to third parties. Customer controls redaction. Data deleted after engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/quantumshield/timeline-dashboard-overview.png" alt="Security operations timeline with 19 events, 18 lineage links, and validation status" class="w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Security operations timeline with events, lineage links, and validation status.</p>
+                    </div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/quantumshield/paperclip-qsl-review-queue.png" alt="Security operations review queue showing findings with risk scores, approval states, and AI agents" class="w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Review queue showing findings with risk scores, approval states, and AI agents.</p>
+                    </div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/quantumshield/timeline-approval-controls.png" alt="Human approval record showing operator identity, reasoning, and timestamp" class="w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Human approval record showing operator identity, reasoning, and timestamp.</p>
+                    </div>
+                </div>
+                <div class="screenshot-card shadow-md">
+                    <img src="assets/quantumshield/selarix-lab-scenario-detail.png" alt="Security training scenario with governance arc objectives and readiness checklist" class="w-full object-cover">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-600">Security training scenario with governance arc objectives and readiness checklist.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagement -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Engagement Model</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <p class="text-gray-700 mb-6">Pricing tiers for security posture assessments with human-in-the-loop governance:</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border-2 border-blue-200 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">Starter</h3>
+                        <p class="text-3xl font-bold text-gray-800 mb-2">$5,000</p>
+                        <p class="text-gray-600 mb-4">Up to 10 targets</p>
+                        <p class="text-gray-600 mb-4">2 weeks</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>External posture assessment</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Human review of every finding</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Governance audit trail</li>
+                        </ul>
+                    </div>
+                    <div class="border-2 border-blue-300 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">Standard</h3>
+                        <p class="text-3xl font-bold text-gray-800 mb-2">$15,000</p>
+                        <p class="text-gray-600 mb-4">Up to 50 targets</p>
+                        <p class="text-gray-600 mb-4">4 weeks</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Everything in Starter</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Replay export bundle</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Debrief session</li>
+                        </ul>
+                    </div>
+                    <div class="border-2 border-blue-400 rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2">Comprehensive</h3>
+                        <p class="text-3xl font-bold text-gray-800 mb-2">$25,000</p>
+                        <p class="text-gray-600 mb-4">Up to 200 targets</p>
+                        <p class="text-gray-600 mb-4">6 weeks</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Everything in Standard</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Full PQC posture summary</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Prioritized remediation roadmap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg shadow-md p-8 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Ready for Governed AI Security?</h2>
+                <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">
+                    Let's discuss how human-in-the-loop security assessments can provide defensible audit trails for your organization.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Email Me
+                    </a>
+                    <a href="tel:+12406598286" class="bg-blue-600 border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition-all duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i>(240) 659-8286
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Michael Bennett. All rights reserved.</p>
+            <p class="mt-2 text-blue-200">
+                <a href="https://quantumshieldlabs.dev" class="hover:text-white transition-colors duration-300">quantumshieldlabs.dev</a>
+                 |
+                <a href="https://github.com/mbennett-labs" class="hover:text-white transition-colors duration-300">github.com/mbennett-labs</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
