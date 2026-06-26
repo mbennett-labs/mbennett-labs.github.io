@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paperclip — AI operations control plane for running, governing, and scaling autonomous AI workforces.">
-    <title>Paperclip | Case Study | Michael Bennett</title>
+    <meta name="description" content="SELARIX Operations Platform — Multi-company control plane for governed AI operations, built on and extended from the Paperclip open-source project.">
+    <title>SELARIX Operations Platform | Case Study | Michael Bennett</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -15,6 +16,7 @@
         .contact-link { transition: all 0.3s ease; }
         .contact-link:hover { transform: translateY(-3px); }
         .section-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
+        .external-badge { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
         .screenshot-card { border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; background: white; }
     </style>
 </head>
@@ -38,35 +40,63 @@
         </div>
     </header>
 
-    <nav class="bg-white shadow-md sticky top-0 z-10">
+    <!-- Ecosystem Nav Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-10 border-b border-gray-200">
         <div class="container mx-auto px-4 py-4">
-            <ul class="flex justify-center md:justify-start space-x-8 overflow-x-auto whitespace-nowrap">
+            <ul class="flex justify-center md:justify-start space-x-6 overflow-x-auto whitespace-nowrap items-center">
                 <li><a href="../index.html" class="nav-item text-blue-700 font-medium"><i class="fas fa-arrow-left mr-2"></i>Home</a></li>
                 <li><a href="../index.html#flagships" class="nav-item text-gray-600 font-medium">Flagships</a></li>
-                <li><span class="nav-item text-gray-800 font-medium border-b-2 border-blue-700">Paperclip</span></li>
+                <li><a href="../index.html#live-products" class="nav-item text-gray-600 font-medium">Live Products</a></li>
+                <li><span class="nav-item text-gray-800 font-medium border-b-2 border-blue-700">SELARIX</span></li>
+                <li class="hidden md:inline text-gray-300">|</li>
+                <li><a href="https://quantumshieldlabs.dev" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fas fa-building mr-1"></i>Company</a></li>
+                <li><a href="https://quantumshieldlabs.dev/blog" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fas fa-blog mr-1"></i>Blog</a></li>
+                <li><a href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fab fa-github mr-1"></i>GitHub</a></li>
+                <li><a href="mailto:michael@quantumshieldlabs.dev" class="nav-item text-gray-600 font-medium"><i class="fas fa-envelope mr-1"></i>Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container mx-auto px-4 py-8">
+        <!-- Breadcrumb -->
         <div class="mb-8 text-gray-600 text-sm">
             <a href="../index.html" class="text-blue-600 hover:text-blue-800">Home</a> <span class="mx-2">/</span>
-            <a href="../index.html#flagships" class="text-blue-600 hover:text-blue-800">Flagships</a> <span class="mx-2">/</span>
-            <span class="text-gray-800 font-medium">Paperclip</span>
+            <a href="../index.html#flagships" class="text-blue-600 hover:text-blue-800">Flagship Systems</a> <span class="mx-2">/</span>
+            <span class="text-gray-800 font-medium">SELARIX Operations Platform</span>
         </div>
 
+        <!-- Open-Source Attribution Banner -->
+        <section class="mb-6">
+            <div class="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-4 flex items-start">
+                <div class="text-blue-600 mt-0.5 mr-3"><i class="fas fa-info-circle text-xl"></i></div>
+                <div>
+                    <p class="text-gray-800 font-medium mb-1">Open-Source Attribution</p>
+                    <p class="text-gray-700 text-sm">
+                        The SELARIX Operations Platform is <strong>built on and extended from the Paperclip open-source project</strong>.
+                        Paperclip is third-party software developed by the Paperclip community. This case study demonstrates how QuantumShield Labs
+                        customized, deployed, and extended Paperclip for governed AI operations. We do not claim ownership of Paperclip itself.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero -->
         <section class="mb-12">
             <div class="bg-white rounded-lg shadow-md p-8">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                     <div>
-                        <h2 class="text-3xl font-bold text-blue-700 mb-2">Paperclip</h2>
-                        <p class="text-gray-600 text-lg">AI Operations Control Plane</p>
+                        <h2 class="text-3xl font-bold text-blue-700 mb-2">SELARIX Operations Platform</h2>
+                        <p class="text-gray-600 text-lg">Multi-Company Control Plane for Governed AI Operations</p>
                     </div>
-                    <div class="mt-4 md:mt-0"><span class="section-badge">Case Study</span></div>
+                    <div class="mt-4 md:mt-0 flex gap-2">
+                        <span class="section-badge">Case Study</span>
+                        <span class="external-badge">Built on Paperclip</span>
+                    </div>
                 </div>
                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                    Paperclip is a single-tenant control plane for running autonomous AI companies.
-                    It provides the corporate equivalent of a boardroom, HR department, finance controller, and project management office — expressed as real software.
+                    The SELARIX Operations Platform is a customized deployment of the Paperclip open-source control plane,
+                    extended for QuantumShield Labs' governed AI security operations. It provides the corporate equivalent of a boardroom,
+                    HR department, finance controller, and project management office — expressed as real software.
                 </p>
                 <div class="flex flex-wrap gap-3">
                     <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">TypeScript</span>
@@ -78,10 +108,42 @@
             </div>
         </section>
 
+        <!-- What We Built vs What We Adopted -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Built by Us <span class="text-gray-400">/</span> Built on</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 card border-l-4 border-green-500">
+                    <div class="text-green-700 mb-3"><i class="fas fa-hammer text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Customizations & Extensions</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Governance rules tailored for security operations compliance</li>
+                        <li>Agent adapter configurations for security-tool integrations</li>
+                        <li>Board-gated approval workflows for investigation scope changes</li>
+                        <li>Integration with QuantumShield Core audit trail formats</li>
+                        <li>Custom cost attribution for per-engagement client billing</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card border-l-4 border-blue-500">
+                    <div class="text-blue-700 mb-3"><i class="fas fa-cubes text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Adopted from Paperclip</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Multi-company data model and scoping</li>
+                        <li>Agent heartbeat + scheduler adapter framework</li>
+                        <li>Hierarchical task lifecycle (backlog &rarr; done)</li>
+                        <li>Budget hard-stop / auto-pause engine</li>
+                        <li>Board operator governance primitives</li>
+                        <li>Plugin SDK and external adapter registry</li>
+                    </ul>
+                    <p class="text-gray-600 text-sm mt-4">All adopted components remain open-source and traceable to the Paperclip upstream.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Original Problem / Solution -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div class="bg-white rounded-lg shadow-md p-6 card">
                 <div class="text-blue-700 mb-4"><i class="fas fa-exclamation-triangle text-2xl"></i></div>
-                <h3 class="text-2xl font-semibold mb-4">The Problem</h3>
+                <h3 class="text-2xl font-semibold mb-4">The Problem We Solved</h3>
                 <p class="text-gray-700 mb-4">Task management software does not go far enough. When your workforce is AI agents, you need more than a to-do list.</p>
                 <ul class="list-disc pl-5 text-gray-700 space-y-2">
                     <li>AI coding assistants run ad-hoc single-session loops with no company structure, cost controls, or governance</li>
@@ -91,16 +153,17 @@
             </div>
             <div class="bg-white rounded-lg shadow-md p-6 card">
                 <div class="text-blue-700 mb-4"><i class="fas fa-check-circle text-2xl"></i></div>
-                <h3 class="text-2xl font-semibold mb-4">What Paperclip Is</h3>
+                <h3 class="text-2xl font-semibold mb-4">What SELARIX Delivers</h3>
                 <p class="text-gray-700 mb-4">A single-tenant control plane for running autonomous AI companies. One instance manages multiple companies, each with its own org chart, agent workforce, task hierarchy, budget, and governance rules.</p>
                 <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                    <li>Paperclip does NOT run agents — it orchestrates them</li>
-                    <li>Agents execute wherever they run and phone home to Paperclip's REST API</li>
+                    <li>SELARIX does NOT run agents — it orchestrates them</li>
+                    <li>Agents execute wherever they run and phone home to the REST API</li>
                     <li>Separation of control plane from execution plane enables general-purpose adapters</li>
                 </ul>
             </div>
         </div>
 
+        <!-- Architecture -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Architecture at a Glance</h2>
             <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
@@ -113,7 +176,7 @@
          |              |              |          |       |
          +--------------+--------------+----------+-------+
                         |
-                  Paperclip REST API (/api)
+              SELARIX Control API (/api)
                         |
          +--------------+--------------+
          |              |              |
@@ -135,6 +198,7 @@
             </div>
         </section>
 
+        <!-- Key Capabilities -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Key Capabilities</h2>
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -152,6 +216,7 @@
             </div>
         </section>
 
+        <!-- Use Cases -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Use Cases</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -178,6 +243,7 @@
             </div>
         </section>
 
+        <!-- Technical Foundation -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Technical Foundation</h2>
             <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
@@ -217,11 +283,12 @@
             </div>
         </section>
 
+        <!-- Screenshots -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Screenshots</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="screenshot-card shadow-md">
-                    <img src="assets/paperclip/dashboard-overview.png" alt="Paperclip dashboard overview" class="w-full object-cover">
+                    <img src="assets/paperclip/dashboard-overview.png" alt="Operations dashboard overview" class="w-full object-cover">
                     <div class="p-4"><p class="text-sm text-gray-600">Operations dashboard with agent counts, issue statuses, and budget utilization.</p></div>
                 </div>
                 <div class="screenshot-card shadow-md">
@@ -229,7 +296,7 @@
                     <div class="p-4"><p class="text-sm text-gray-600">Event detail panel with governance metadata and approval chain.</p></div>
                 </div>
                 <div class="screenshot-card shadow-md">
-                    <img src="assets/paperclip/replay-active.png" alt="Replay active view" class="w-full object-cover">
+                    <img src="assets/paperclip/replay-active.png" alt="Active replay view" class="w-full object-cover">
                     <div class="p-4"><p class="text-sm text-gray-600">Active replay of decision sequences for audit reconstruction.</p></div>
                 </div>
                 <div class="screenshot-card shadow-md">
@@ -239,10 +306,11 @@
             </div>
         </section>
 
+        <!-- CTA -->
         <section class="mb-12">
             <div class="bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg shadow-md p-8 text-center text-white">
                 <h2 class="text-3xl font-bold mb-4">Build Governable AI Infrastructure</h2>
-                <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Interested in multi-agent orchestration, cost-controlled AI operations, or governance-ready control planes? Let's discuss how Paperclip's architecture applies to your needs.</p>
+                <p class="text-blue-200 text-lg mb-8 max-w-2xl mx-auto">Interested in multi-agent orchestration, cost-controlled AI operations, or governance-ready control planes? Let's discuss how the SELARIX Operations Platform applies to your needs.</p>
                 <div class="flex flex-col md:flex-row justify-center gap-4">
                     <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all"><i class="fas fa-envelope mr-2"></i>Email Me</a>
                     <a href="tel:+12406598286" class="bg-blue-600 border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition-all"><i class="fas fa-phone-alt mr-2"></i>(240) 659-8286</a>
@@ -251,10 +319,20 @@
         </section>
     </main>
 
-    <footer class="bg-blue-800 text-white py-6 mt-12">
+    <footer class="bg-blue-800 text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2026 Michael Bennett. All rights reserved.</p>
-            <p class="mt-2 text-blue-200"><a href="https://quantumshieldlabs.dev" class="hover:text-white transition-colors">quantumshieldlabs.dev</a> | <a href="https://github.com/mbennett-labs" class="hover:text-white transition-colors">github.com/mbennett-labs</a></p>
+            <p class="font-semibold mb-2">QuantumShield Labs LLC</p>
+            <p class="text-blue-200 text-sm mb-4">AI Security • Post-Quantum Cryptography • Governance Engineering</p>
+            <p class="mb-4">
+                <a href="https://quantumshieldlabs.dev" class="hover:text-white transition-colors duration-300 mx-2">Company</a>
+                <span class="text-blue-400">|</span>
+                <a href="https://quantumshieldlabs.dev/blog" class="hover:text-white transition-colors duration-300 mx-2">Blog</a>
+                <span class="text-blue-400">|</span>
+                <a href="https://github.com/mbennett-labs" class="hover:text-white transition-colors duration-300 mx-2">GitHub</a>
+                <span class="text-blue-400">|</span>
+                <a href="mailto:michael@quantumshieldlabs.dev" class="hover:text-white transition-colors duration-300 mx-2">Contact</a>
+            </p>
+            <p class="text-blue-300 text-sm">&copy; 2026 Michael Bennett. All rights reserved.</p>
         </div>
     </footer>
 </body>
