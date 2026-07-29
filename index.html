@@ -1,693 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QuantumShield Labs — We solve complex technical problems at the intersection of AI and security. Governed AI operations, post-quantum cryptography, and production engineering.">
-    <meta name="keywords" content="AI security, post-quantum cryptography, blockchain, governance engineering, AI operations, security consulting, QuantumShield Labs">
-    <title>QuantumShield Labs | AI Security &amp; Engineering</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .section-active {
-            border-bottom: 2px solid #1e40af;
-            color: #1e40af;
-        }
-        .nav-item {
-            transition: all 0.3s ease;
-            padding-bottom: 0.5rem;
-            margin-bottom: -2px;
-        }
-        .nav-item:hover {
-            border-bottom: 2px solid #93c5fd;
-            color: #1e40af;
-        }
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        .skill-category {
-            transition: transform 0.3s ease;
-        }
-        .skill-category:hover {
-            transform: scale(1.03);
-        }
-        .contact-link {
-            transition: all 0.3s ease;
-        }
-        .contact-link:hover {
-            transform: translateY(-3px);
-        }
-        .featured-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-        .section-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-        .live-badge {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-        .product-badge {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Michael Bennett — founder of QuantumShield Labs. Governed AI, security engineering, production systems, and evidence-first technical delivery.">
+  <meta name="keywords" content="Michael Bennett, QuantumShield Labs, governed AI, AI security, security engineering, technical consulting, portfolio">
+  <title>Michael Bennett | Founder, Engineer &amp; Governed AI Builder</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { color: #172033; background: #f5f7fb; }
+    .hero-grid { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.12) 1px, transparent 0); background-size: 24px 24px; }
+    .glass { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(10px); }
+    .card { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(30,64,175,.12); border-color: #93c5fd; }
+    .nav-link { transition: color .2s ease; }
+    .nav-link:hover { color: #1d4ed8; }
+    .eyebrow { letter-spacing: .16em; text-transform: uppercase; }
+    .timeline-step:not(:last-child)::after { content: ''; position: absolute; left: 1.1rem; top: 2.6rem; bottom: -1.6rem; width: 2px; background: #dbeafe; }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-<!-- Header section with profile images on both sides -->
-<header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-12">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8">
-            <!-- Left profile image -->
-            <div class="mb-6 md:mb-0">
-                <img src="profile.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
-            </div>
-
-            <!-- Center content -->
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">QuantumShield Labs</h1>
-                <p class="text-xl text-blue-200">Michael Bennett — Founder & Lead Engineer</p>
-                <div class="flex space-x-4 mt-6 justify-center">
-                    <!-- Social links -->
-                    <a href="https://github.com/mbennett-labs/mbennett-labs" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
-                        <i class="fab fa-linkedin-in text-xl"></i>
-                    </a>
-                    <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
-                    <a href="tel:+12406598286" class="bg-white text-blue-700 p-3 rounded-full hover:bg-blue-50 transition-colors">
-                        <i class="fas fa-phone-alt text-xl"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right profile image -->
-            <div class="mt-6 md:mt-0">
-                <img src="profile2.jpg" alt="Michael Bennett" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
-            </div>
+<body class="font-sans antialiased">
+  <header class="bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white hero-grid">
+    <div class="max-w-7xl mx-auto px-5 py-14 md:py-20">
+      <div class="grid lg:grid-cols-3 gap-10 items-center">
+        <div class="flex justify-center lg:justify-start">
+          <img src="profile.jpg" alt="Michael Bennett" class="w-40 h-40 md:w-48 md:h-48 rounded-3xl border-4 border-white shadow-2xl object-cover">
         </div>
+        <div class="lg:col-span-2 text-center lg:text-left">
+          <p class="eyebrow text-blue-200 text-sm font-semibold mb-3">Founder • Engineer • Systems Builder</p>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">Michael Bennett</h1>
+          <p class="text-xl md:text-2xl text-blue-100 mt-4">Founder of QuantumShield Labs</p>
+          <p class="text-lg text-blue-100 max-w-3xl mt-6 leading-relaxed">
+            I build governed AI and security systems that are observable, auditable, useful, and human-directed. My work combines production engineering, operational design, and evidence-first decision making.
+          </p>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-3 mt-7">
+            <a href="#start" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50">Start Here</a>
+            <a href="#work" class="glass px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900">View Case Studies</a>
+            <a href="#contact" class="glass px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900">Discuss a Project</a>
+          </div>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-7 text-lg">
+            <a aria-label="GitHub" href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a aria-label="Email" href="mailto:michael@quantumshieldlabs.dev"><i class="fas fa-envelope"></i></a>
+            <a aria-label="Phone" href="tel:+12406598286"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-</header>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-10 border-b border-gray-100">
-        <div class="container mx-auto px-4 py-4">
-            <ul class="flex justify-center md:justify-start space-x-6 overflow-x-auto whitespace-nowrap">
-                <li><a href="#about" class="nav-item section-active text-blue-700 font-medium">About</a></li>
-                <li><a href="#flagships" class="nav-item text-gray-600 font-medium">Flagships</a></li>
-                <li><a href="#live-products" class="nav-item text-gray-600 font-medium">Live Products</a></li>
-                <li><a href="#deliverables" class="nav-item text-gray-600 font-medium">Deliverables</a></li>
-                <li><a href="#research" class="nav-item text-gray-600 font-medium">Research</a></li>
-                <li><a href="#skills" class="nav-item text-gray-600 font-medium">Skills</a></li>
-                <li><a href="#background" class="nav-item text-gray-600 font-medium">Background</a></li>
-                <li class="hidden md:inline text-gray-300">|</li>
-                <li><a href="https://quantumshieldlabs.dev" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fas fa-building mr-1"></i>Company</a></li>
-                <li><a href="https://quantumshieldlabs.dev/blog" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fas fa-blog mr-1"></i>Blog</a></li>
-                <li><a href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer" class="nav-item text-gray-600 font-medium"><i class="fab fa-github mr-1"></i>GitHub</a></li>
-                <li><a href="#contact" class="nav-item text-gray-600 font-medium"><i class="fas fa-envelope mr-1"></i>Contact</a></li>
-            </ul>
+  <nav class="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-5 py-4 overflow-x-auto">
+      <div class="flex gap-6 whitespace-nowrap text-sm font-semibold text-gray-600">
+        <a class="nav-link" href="#start">Start Here</a>
+        <a class="nav-link" href="#help">How I Help</a>
+        <a class="nav-link" href="#decisions">How I Work</a>
+        <a class="nav-link" href="#work">Case Studies</a>
+        <a class="nav-link" href="#evidence">Evidence</a>
+        <a class="nav-link" href="#faq">Q&amp;A</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="https://quantumshieldlabs.dev" target="_blank" rel="noopener noreferrer">Company <i class="fas fa-external-link-alt text-xs"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="start" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-10">
+          <p class="eyebrow text-blue-700 text-xs font-bold">Start here</p>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">I solve difficult technical problems by making the work understandable, governed, and executable.</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mt-6">
+            This is my professional and personal portfolio. QuantumShield Labs is the company; this site explains the engineer, founder, and working style behind it. It is designed to reduce uncertainty for clients, collaborators, employers, investors, contributors, and future teammates.
+          </p>
+          <p class="text-gray-700 text-lg leading-relaxed mt-4">
+            My strongest work sits at the intersection of governed AI, security engineering, operational systems, and production delivery. I prefer evidence over hype, bounded experiments over uncontrolled automation, and systems that make human judgment stronger rather than invisible.
+          </p>
         </div>
-    </nav>
+        <aside class="bg-blue-900 text-white rounded-2xl shadow-sm p-8">
+          <p class="eyebrow text-blue-200 text-xs font-bold">What to expect</p>
+          <ul class="mt-5 space-y-4">
+            <li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Transparent reasoning</li>
+            <li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Evidence-preserving work</li>
+            <li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Human review for consequential decisions</li>
+            <li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Versioned documentation and handoffs</li>
+            <li><i class="fas fa-check-circle text-blue-300 mr-2"></i>Willingness to revise when evidence changes</li>
+          </ul>
+          <a href="#decisions" class="inline-block mt-7 text-blue-100 font-semibold hover:text-white">See how I make decisions <i class="fas fa-arrow-right ml-1"></i></a>
+        </aside>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <!-- About Section -->
-        <section id="about" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">QuantumShield Labs</h2>
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <p class="text-gray-700 text-lg text-center mb-6">
-                    We solve complex technical problems at the intersection of <strong>AI and security</strong>.
-                    From governed AI operations platforms to production directory engines, we build systems
-                    where engineering rigor meets defensible outcomes.
-                </p>
-                <p class="text-gray-700 mb-6 text-center">
-                    Founded and led by <strong>Michael Bennett</strong>, a software developer and security specialist
-                    with a BS in Software Development &amp; Security and hands-on experience shipping
-                    production APIs, AI assessment tools, and blockchain-integrated services.
-                </p>
-
-                <h3 class="text-2xl font-semibold text-center mb-6">What We Do:</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-shield-alt text-2xl"></i></div>
-                        <h4 class="font-semibold">Post-Quantum Security</h4>
-                        <p class="text-gray-600 text-sm mt-1">Security posture assessments, NIST compliance frameworks, audit-ready governance</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-layer-group text-2xl"></i></div>
-                        <h4 class="font-semibold">Full Stack Development</h4>
-                        <p class="text-gray-600 text-sm mt-1">Production web applications, scalable directory platforms, end-to-end client delivery</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-link text-2xl"></i></div>
-                        <h4 class="font-semibold">Blockchain &amp; Web3</h4>
-                        <p class="text-gray-600 text-sm mt-1">Smart contracts, x402 micropayments, Base blockchain integrations, on-chain analytics</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-brain text-2xl"></i></div>
-                        <h4 class="font-semibold">AI &amp; Automation</h4>
-                        <p class="text-gray-600 text-sm mt-1">Governed AI workflows, human-in-the-loop enforcement, evidence-first automation</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-hospital text-2xl"></i></div>
-                        <h4 class="font-semibold">Healthcare Compliance</h4>
-                        <p class="text-gray-600 text-sm mt-1">HIPAA-aligned security, healthcare directory engineering, regulatory-ready documentation</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg text-center">
-                        <div class="text-blue-700 mb-2"><i class="fas fa-chart-line text-2xl"></i></div>
-                        <h4 class="font-semibold">Product Development</h4>
-                        <p class="text-gray-600 text-sm mt-1">Market evaluation frameworks, programmatic SEO, data pipelines, and affiliate systems</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Background Section -->
-        <section id="background" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Background &amp; Credentials</h2>
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3">Experience</h3>
-                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                            <li><strong>Founder &amp; Lead Developer</strong> &mdash; QuantumShield Labs LLC (2024&ndash;Present)</li>
-                            <li><strong>Independent Technology Consultant</strong> &mdash; Systems design, automation, and web application development (2020&ndash;2024)</li>
-                            <li><strong>Executive Chef &amp; Operations Manager</strong> &mdash; Proven operational discipline in high-pressure, cross-functional environments</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3">Education</h3>
-                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                            <li><strong>B.S. Software Development and Security</strong> &mdash; UMGC, 2024</li>
-                            <li><strong>A.S. Health Science</strong> &mdash; SUNY Broome, 2011&ndash;2014</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Programming -->
-                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
-                    <div class="text-center mb-4">
-                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
-                            <i class="fas fa-code text-blue-700 text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">Programming</h3>
-                    </div>
-                    <p class="text-gray-700 text-center">
-                        Python JavaScript SQL HTML/CSS TypeScript Node.js React
-                    </p>
-                </div>
-
-                <!-- Security -->
-                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
-                    <div class="text-center mb-4">
-                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
-                            <i class="fas fa-shield-alt text-blue-700 text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">Security</h3>
-                    </div>
-                    <p class="text-gray-700 text-center">
-                        Post-Quantum Cryptography NIST Standards HIPAA Compliance Risk Assessment Secure Coding
-                    </p>
-                </div>
-
-                <!-- Blockchain/Web3 -->
-                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
-                    <div class="text-center mb-4">
-                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
-                            <i class="fas fa-link text-blue-700 text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">Blockchain/Web3</h3>
-                    </div>
-                    <p class="text-gray-700 text-center">
-                        Smart Contracts x402 Payments Base Blockchain DeFi Analytics Web3.js
-                    </p>
-                </div>
-
-                <!-- AI/ML -->
-                <div class="bg-white rounded-lg shadow-md p-6 skill-category">
-                    <div class="text-center mb-4">
-                        <div class="inline-block p-3 bg-blue-100 rounded-full mb-2">
-                            <i class="fas fa-brain text-blue-700 text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold">AI/ML</h3>
-                    </div>
-                    <p class="text-gray-700 text-center">
-                        Claude API NotebookLM HuggingFace Transformers AI Agents Prompt Engineering
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Flagship Systems Section -->
-        <section id="flagships" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Flagship Systems</h2>
-            
-            <!-- Open Source & Ecosystem Contributions Featured Card -->
-            <div class="mb-8 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg shadow-md overflow-hidden border-2 border-purple-200">
-                <div class="p-8">
-                    <div class="flex items-center justify-between mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-purple-700 mb-2">Open Source &amp; Ecosystem Contributions</h3>
-                            <span class="featured-badge">Featured</span>
-                        </div>
-                        <div class="text-4xl text-purple-300">
-                            <i class="fab fa-github-alt"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-4 text-lg">
-                        Active contributor with merged PRs to major projects. We ship security-focused tools, blockchain infrastructure, and governed AI frameworks &mdash; then open-source the results.
-                    </p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-1 mb-6">
-                        <li>Coinbase x402 Ecosystem &mdash; micropayment protocol integration</li>
-                        <li>Paperclip / SELARIX &mdash; multi-company AI operations control plane extensions</li>
-                        <li>CrawDaddy &mdash; security scanning for agent ecosystems (OpenClaw, etc.)</li>
-                        <li>Base blockchain tooling and smart contract templates</li>
-                    </ul>
-                    <a href="contributions.html" class="inline-block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all duration-300">
-                        View Open Source Portfolio
-                        <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- QuantumShield Core -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-blue-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🛡️ QuantumShield Core</h3>
-                            <span class="section-badge">Built by us</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Governed AI Security Operations</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            4,251-line Python platform with human-in-the-loop enforcement,
-                            append-only audit trails, and 37 documented governance controls.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Python • Governance • Audit</div>
-                        <a href="portfolio/quantumshield-core.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Directory Factory -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-blue-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">📁 Directory Factory</h3>
-                            <span class="section-badge">Built by us</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Opportunity Intelligence Framework</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            7-factor weighted scoring engine for evaluating niche directory businesses.
-                            Validated by TheBinMap live production directory.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">TypeScript • Node.js • LLM</div>
-                        <a href="portfolio/directory-factory.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- SELARIX Operations Platform -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-blue-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🛡️ SELARIX</h3>
-                            <span class="section-badge">Built on Paperclip</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">AI Operations Control Plane</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Multi-company control plane for governed AI workforces,
-                            built on and extended from the Paperclip open-source project.
-                            Hierarchical cost controls, board governance, and 10 adapter types.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">TypeScript • React • PostgreSQL</div>
-                        <a href="portfolio/selarix-operations-platform.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- TheBinMap -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-blue-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🗺️ TheBinMap</h3>
-                            <span class="live-badge">LIVE</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Nationwide Bin Store Directory</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            528 pages, 456 stores, 21 states. Programmatic SEO with Astro SSG,
-                            SQLite data layer, and zero hosting costs.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Astro • Python • SEO</div>
-                        <a href="portfolio/thebinmap.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-all text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Live Products & Websites Section -->
-        <section id="live-products" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Live Products &amp; Websites</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- QuantumShield Labs -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-green-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🌐 QuantumShield Labs</h3>
-                            <span class="live-badge">LIVE</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Company Website &amp; Blog</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Public-facing security research, case studies, and governed AI frameworks.
-                            Hosted infrastructure with automated deployment pipeline.
-                        </p>
-                        <div class="mb-4">
-                            <img src="portfolio/assets/quantumshield/qsl-homepage.png" alt="QuantumShield Labs Homepage" class="w-full h-32 object-cover rounded border">
-                        </div>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Static Site • Automated CI/CD</div>
-                        <a href="https://quantumshieldlabs.dev" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 font-medium flex items-center mb-2">
-                            Visit Live Site <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- TheBinMap -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-green-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🗺️ TheBinMap</h3>
-                            <span class="live-badge">LIVE</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Nationwide Bin Store Directory</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Live production directory with 528 pages, 456 stores across 21 states.
-                            Programmatic SEO with zero hosting costs.
-                        </p>
-                        <div class="mb-4">
-                            <img src="portfolio/assets/thebinmap/01-homepage.png" alt="TheBinMap Homepage" class="w-full h-32 object-cover rounded border">
-                        </div>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Astro • Python • SQLite</div>
-                        <a href="https://thebinmap.com" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 font-medium flex items-center mb-2">
-                            Visit Live Site <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                        <a href="portfolio/thebinmap.html" class="text-blue-600 hover:text-blue-800 font-medium flex items-center text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- TherapistIndex -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-green-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🧠 TherapistIndex</h3>
-                            <span class="live-badge">LIVE</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Healthcare Directory Platform</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Therapist directory with search, profiles, and compliance-aligned
-                            data handling. HIPAA-aware architecture.
-                        </p>
-                        <div class="mb-4 bg-gray-100 rounded h-32 flex items-center justify-center text-gray-400 text-sm">
-                            [Screenshot protected by Cloudflare]
-                        </div>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Healthcare • Directory • Compliance</div>
-                        <a href="https://therapistindex.com" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-800 font-medium flex items-center mb-2">
-                            Visit Live Site <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Consulting Deliverables Section -->
-        <section id="deliverables" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-4">Consulting Deliverables</h2>
-            <p class="text-gray-700 text-center mb-8 max-w-3xl mx-auto">
-                Representative examples of the documentation, strategy, architecture, and implementation planning
-                clients receive during a QuantumShield Labs engagement.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Executive AI Automation Assessment -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-indigo-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">📋 Executive AI Automation Assessment</h3>
-                            <span class="product-badge">Sample</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Executive Consulting Report</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Business-focused assessment showing automation opportunity analysis, workflow evaluation,
-                            governance recommendations, ROI planning, and an implementation roadmap.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">
-                            Executive Summary • ROI • Governance • Roadmap
-                        </div>
-                        <a href="https://quantumshieldlabs.dev/examples/EXECUTIVE_AI_AUTOMATION_ASSESSMENT.html"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-all text-sm">
-                            View Example <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Technical Solution Blueprint -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-indigo-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🏗️ Technical Solution Blueprint</h3>
-                            <span class="product-badge">Sample</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Technical Architecture Report</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Technical blueprint showing governed AI architecture, security boundaries,
-                            system integration strategy, human review workflows, and deployment planning.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">
-                            Architecture • Security • AI • Integration
-                        </div>
-                        <a href="https://quantumshieldlabs.dev/examples/TECHNICAL_SOLUTION_BLUEPRINT.html"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-all text-sm">
-                            View Example <i class="fas fa-external-link-alt ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Current Research & Engineering Section -->
-        <section id="research" class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Current Research &amp; Engineering</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- SELARIX Ecosystem -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-purple-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🛡️ SELARIX Ecosystem</h3>
-                            <span class="section-badge">Built on Paperclip</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Governed AI Workforce Research</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Extending the Paperclip open-source project into a multi-company control plane
-                            with cost governance, board oversight, and ten adapter integrations.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">TypeScript • React • PostgreSQL</div>
-                        <a href="portfolio/selarix-operations-platform.html" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-all text-sm">
-                            View Case Study <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- OpenClaw Analysis -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-purple-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">🔍 OpenClaw Ecosystem Analysis</h3>
-                            <span class="section-badge">Security Research</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Agent Security &amp; Supply-Chain Risk</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            Published security analysis of the OpenClaw agent ecosystem,
-                            documenting malicious skills, unsafe tool behaviors, and supply-chain risks.
-                            CrawDaddy v2 scanner covers 9 OpenClaw CVEs.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Security Audit • CVE Analysis • Agents</div>
-                        <a href="https://quantumshieldlabs.dev/blog/crawdaddy-v2-openclaw-security-scanner.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-all text-sm">
-                            Read Report <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- AI Governance Research -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card border-2 border-purple-200">
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-semibold">📋 AI Governance Framework</h3>
-                            <span class="section-badge">Research</span>
-                        </div>
-                        <p class="text-gray-600 mb-2">Governed AI Deployment</p>
-                        <p class="text-gray-700 mb-4 text-sm">
-                            37 documented governance controls for human-in-the-loop AI systems,
-                            append-only audit trails, and board-level oversight patterns.
-                        </p>
-                        <div class="text-gray-600 font-medium mb-4 text-sm">Governance • Compliance • Frameworks</div>
-                        <a href="portfolio/quantumshield-core.html" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-all text-sm">
-                            View Framework <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Let's Connect</h2>
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
-                <p class="text-gray-700 text-center mb-8 text-lg">
-                    Ready to solve a difficult technical problem? Let’s discuss how QuantumShield Labs
-                    can deliver governed, secure systems for your organization.
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <a href="mailto:michael@quantumshieldlabs.dev" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
-                            <i class="fas fa-envelope text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Email</h3>
-                        <p class="text-gray-700 text-center text-sm">michael@quantumshieldlabs.dev</p>
-                    </a>
-
-                    <a href="tel:+12406598286" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
-                            <i class="fas fa-phone-alt text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Phone</h3>
-                        <p class="text-gray-700 text-center">(240) 659-8286</p>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
-                            <i class="fab fa-linkedin-in text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
-                        <p class="text-gray-700 text-center">Connect with me</p>
-                    </a>
-
-                    <a href="https://github.com/mbennett-labs" class="contact-link bg-white border border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all duration-300">
-                        <div class="bg-blue-100 text-blue-700 rounded-full p-3 mb-3">
-                            <i class="fab fa-github text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">GitHub</h3>
-                        <p class="text-gray-700 text-center">View my code</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="font-semibold mb-2">QuantumShield Labs LLC</p>
-            <p class="text-blue-200 text-sm mb-4">AI Security • Post-Quantum Cryptography • Governance Engineering</p>
-            <p class="mb-4">
-                <a href="https://quantumshieldlabs.dev" class="hover:text-white transition-colors duration-300 mx-2">Company</a>
-                <span class="text-blue-400">|</span>
-                <a href="https://quantumshieldlabs.dev/blog" class="hover:text-white transition-colors duration-300 mx-2">Blog</a>
-                <span class="text-blue-400">|</span>
-                <a href="https://github.com/mbennett-labs" class="hover:text-white transition-colors duration-300 mx-2">GitHub</a>
-                <span class="text-blue-400">|</span>
-                <a href="mailto:michael@quantumshieldlabs.dev" class="hover:text-white transition-colors duration-300 mx-2">Contact</a>
-            </p>
-            <p class="text-blue-300 text-sm">&copy; 2026 Michael Bennett. All rights reserved.</p>
+    <section id="help" class="bg-white border-y border-gray-200">
+      <div class="max-w-7xl mx-auto px-5 py-16">
+        <div class="max-w-3xl">
+          <p class="eyebrow text-blue-700 text-xs font-bold">How I help</p>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">Clear client outcomes, not a wall of technologies.</h2>
+          <p class="text-gray-700 text-lg mt-5">I am most useful when a problem is complex, cross-disciplinary, or hard to trust without evidence.</p>
         </div>
-    </footer>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-brain text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Governed AI Operations</h3>
+            <p class="text-gray-600 mt-3">Design AI workflows with human approval, audit trails, budget controls, bounded authority, and recoverable operations.</p>
+          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-shield-alt text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Security &amp; Risk Engineering</h3>
+            <p class="text-gray-600 mt-3">Assess technical risk, strengthen system boundaries, document controls, and prepare organizations for higher-consequence environments.</p>
+          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-project-diagram text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Technical Architecture</h3>
+            <p class="text-gray-600 mt-3">Translate business goals into practical system designs, implementation roadmaps, integration plans, and decision-ready documentation.</p>
+          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-cogs text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Operational Automation</h3>
+            <p class="text-gray-600 mt-3">Reduce repetitive work while keeping sensitive actions observable, reviewable, and under human control.</p>
+          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-layer-group text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Production Web Platforms</h3>
+            <p class="text-gray-600 mt-3">Build and improve data products, directories, APIs, full-stack applications, and evidence-backed conversion systems.</p>
+          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7">
+            <i class="fas fa-microscope text-3xl text-blue-700"></i>
+            <h3 class="text-xl font-bold mt-5">Discovery &amp; Technical Audits</h3>
+            <p class="text-gray-600 mt-3">Understand the current system before changing it, identify gaps and contradictions, and produce a bounded implementation plan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        // Simple navigation highlighting
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('section');
-            const navItems = document.querySelectorAll('.nav-item');
+    <section id="decisions" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="eyebrow text-blue-700 text-xs font-bold">How I make decisions</p>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">Explore widely. Decide carefully.</h2>
+          <p class="text-gray-700 text-lg mt-5 leading-relaxed">
+            I welcome ambitious ideas, but I do not treat excitement as proof. The strongest ideas survive evidence gathering, counter-evidence, simplification, bounded testing, and review.
+          </p>
+          <div class="bg-white border border-gray-200 rounded-2xl p-7 mt-7">
+            <p class="font-semibold text-gray-900">A question I return to often:</p>
+            <blockquote class="text-2xl font-bold text-blue-800 mt-3">“What are we actually trying to build?”</blockquote>
+            <p class="text-gray-600 mt-3">That question helps separate useful architecture from attractive distraction.</p>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="timeline-step relative pl-14">
+            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">1</span>
+            <h3 class="font-bold text-lg">Reality discovery</h3>
+            <p class="text-gray-600 mt-1">Understand the system, repository, people, constraints, and evidence before proposing change.</p>
+          </div>
+          <div class="timeline-step relative pl-14">
+            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">2</span>
+            <h3 class="font-bold text-lg">Repository understanding</h3>
+            <p class="text-gray-600 mt-1">Use structural maps and prior evidence so implementation begins from knowledge rather than repeated rediscovery.</p>
+          </div>
+          <div class="timeline-step relative pl-14">
+            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">3</span>
+            <h3 class="font-bold text-lg">Bounded mission</h3>
+            <p class="text-gray-600 mt-1">Define scope, allowed actions, definition of done, validation, and a stop condition.</p>
+          </div>
+          <div class="timeline-step relative pl-14">
+            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">4</span>
+            <h3 class="font-bold text-lg">Human review</h3>
+            <p class="text-gray-600 mt-1">Consequential decisions remain accountable and reviewable. Authority may be delegated; responsibility may not.</p>
+          </div>
+          <div class="timeline-step relative pl-14">
+            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">5</span>
+            <h3 class="font-bold text-lg">Validate and harvest</h3>
+            <p class="text-gray-600 mt-1">Preserve evidence, extract reusable capabilities, update understanding, and make the next mission easier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            // On scroll, highlight the corresponding nav item
-            window.addEventListener('scroll', () => {
-                let current = '';
+    <section id="work" class="bg-gray-950 text-white">
+      <div class="max-w-7xl mx-auto px-5 py-16">
+        <p class="eyebrow text-blue-300 text-xs font-bold">Selected work</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3">Case studies built from real systems.</h2>
+        <p class="text-gray-300 text-lg max-w-3xl mt-5">These projects show how I combine architecture, operations, governance, research, and production delivery.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
+            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Original system</span>
+            <h3 class="text-xl font-bold mt-3">QuantumShield Core</h3>
+            <p class="text-gray-300 mt-3 text-sm">Governed security operations with evidence, human approval, learning rules, and append-only operational records.</p>
+            <a href="portfolio/quantumshield-core.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
+          </article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
+            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Capability factory</span>
+            <h3 class="text-xl font-bold mt-3">Directory Factory</h3>
+            <p class="text-gray-300 mt-3 text-sm">Niche evaluation, reusable tooling, growth workflows, and commercial experimentation for directory ventures.</p>
+            <a href="portfolio/directory-factory.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
+          </article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
+            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Open-source foundation</span>
+            <h3 class="text-xl font-bold mt-3">Paperclip / SELARIX Work</h3>
+            <p class="text-gray-300 mt-3 text-sm">QSL extensions and operational research built on the open-source Paperclip project, with explicit attribution and governed workflows.</p>
+            <a href="portfolio/selarix-operations-platform.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
+          </article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
+            <span class="text-xs font-bold text-green-300 uppercase tracking-wider">Live proving ground</span>
+            <h3 class="text-xl font-bold mt-3">TheBinMap</h3>
+            <p class="text-gray-300 mt-3 text-sm">A growing production directory and intelligence platform used to validate acquisition, SEO, intake, automation, and monetization systems.</p>
+            <a href="portfolio/thebinmap.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (scrollY >= (sectionTop - 200)) {
-                        current = section.getAttribute('id');
-                    }
-                });
+    <section id="evidence" class="max-w-7xl mx-auto px-5 py-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <p class="eyebrow text-blue-700 text-xs font-bold">Evidence, not promises</p>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3">What supports the claims on this page.</h2>
+          <div class="grid md:grid-cols-2 gap-6 mt-9">
+            <article class="bg-white border border-gray-200 rounded-2xl p-7">
+              <h3 class="font-bold text-xl">Production systems</h3>
+              <p class="text-gray-600 mt-3">Live directories, public research, operational AI workflows, APIs, security tooling, and deployed websites.</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7">
+              <h3 class="font-bold text-xl">Versioned decisions</h3>
+              <p class="text-gray-600 mt-3">Architecture notes, discovery reports, implementation plans, handoffs, doctrine, and milestone records preserved in Git.</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7">
+              <h3 class="font-bold text-xl">Open-source attribution</h3>
+              <p class="text-gray-600 mt-3">Original work is distinguished from forks, integrations, extensions, and capabilities learned from worthy public projects.</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7">
+              <h3 class="font-bold text-xl">Operational learning</h3>
+              <p class="text-gray-600 mt-3">Mistakes, recoveries, failed assumptions, costs, and lessons are recorded so future work begins stronger.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="bg-blue-50 border border-blue-200 rounded-2xl p-8">
+          <h3 class="font-bold text-xl text-blue-900">Representative deliverables</h3>
+          <ul class="mt-5 space-y-4 text-gray-700">
+            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/EXECUTIVE_AI_AUTOMATION_ASSESSMENT.html" target="_blank" rel="noopener noreferrer">Executive AI Automation Assessment</a></li>
+            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/TECHNICAL_SOLUTION_BLUEPRINT.html" target="_blank" rel="noopener noreferrer">Technical Solution Blueprint</a></li>
+            <li><a class="text-blue-700 font-semibold hover:underline" href="contributions.html">Open-source contribution portfolio</a></li>
+            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/blog" target="_blank" rel="noopener noreferrer">Research and engineering notes</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-                navItems.forEach(item => {
-                    item.classList.remove('section-active', 'text-blue-700');
-                    item.classList.add('text-gray-600');
-                    if (item.getAttribute('href').substring(1) === current) {
-                        item.classList.add('section-active', 'text-blue-700');
-                        item.classList.remove('text-gray-600');
-                    }
-                });
-            });
+    <section class="bg-white border-y border-gray-200">
+      <div class="max-w-7xl mx-auto px-5 py-16">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <p class="eyebrow text-blue-700 text-xs font-bold">Recorded Q&amp;A</p>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">A video introduction is coming.</h2>
+            <p class="text-gray-700 text-lg mt-5">This section will contain short answers to the questions clients, collaborators, employers, investors, and future teammates most often ask.</p>
+            <p class="text-gray-600 mt-4">Planned topics include career transition, engineering philosophy, AI governance, open-source work, mistakes, decision making, and what it is like to collaborate with me.</p>
+          </div>
+          <div class="bg-gray-900 rounded-2xl min-h-72 flex items-center justify-center text-center p-8 shadow-lg">
+            <div>
+              <i class="fas fa-video text-5xl text-blue-300"></i>
+              <p class="text-white text-xl font-bold mt-5">Professional video Q&amp;A placeholder</p>
+              <p class="text-gray-400 mt-2">Recorded introduction and individual question videos will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            // Smooth scrolling for navigation links
-            navItems.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    if (this.getAttribute('href').startsWith('#')) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href');
-                        const targetSection = document.querySelector(targetId);
+    <section id="faq" class="max-w-5xl mx-auto px-5 py-16">
+      <p class="eyebrow text-blue-700 text-xs font-bold">Frequently asked questions</p>
+      <h2 class="text-3xl md:text-4xl font-bold mt-3">Questions worth answering before we work together.</h2>
+      <div class="space-y-4 mt-9">
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">What is QuantumShield Labs?</summary>
+          <p class="text-gray-600 mt-4">QuantumShield Labs is the engineering and research organization through which I develop governed intelligence systems, security tooling, production platforms, and evidence-based technical services.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">How do you use AI?</summary>
+          <p class="text-gray-600 mt-4">As an engineering multiplier within bounded missions. AI may research, analyze, implement, and test, but consequential judgment remains human-directed, reviewable, and accountable.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">What kinds of projects are a strong fit?</summary>
+          <p class="text-gray-600 mt-4">Projects involving governed automation, security-sensitive AI, technical discovery, operational workflows, data platforms, directory systems, and difficult integrations where evidence and documentation matter.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">How do you handle mistakes?</summary>
+          <p class="text-gray-600 mt-4">Stop, preserve evidence, identify the actual cause, repair the smallest correct surface, validate recovery, and preserve the lesson so the process improves.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">Why document so much?</summary>
+          <p class="text-gray-600 mt-4">Because conversations and individual models are temporary. Evidence, rationale, decisions, and reusable capabilities should outlive them.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6">
+          <summary class="font-bold cursor-pointer">What can collaborators expect?</summary>
+          <p class="text-gray-600 mt-4">Open discussion, direct questions, transparent uncertainty, respectful disagreement, frequent documentation, bounded execution, and willingness to revise when evidence changes.</p>
+        </details>
+      </div>
+    </section>
 
-                        if (targetSection) {
-                            window.scrollTo({
-                                top: targetSection.offsetTop - 100,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+    <section id="contact" class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
+      <div class="max-w-5xl mx-auto px-5 py-16 text-center">
+        <p class="eyebrow text-blue-200 text-xs font-bold">Open collaboration</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-3">Have a difficult problem worth understanding properly?</h2>
+        <p class="text-blue-100 text-lg max-w-3xl mx-auto mt-5">Share the problem, current constraints, what has already been tried, and what a successful outcome would look like.</p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-blue-50"><i class="fas fa-envelope mr-2"></i>Email Michael</a>
+          <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+          <a href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-github mr-2"></i>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-950 text-gray-300">
+    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <p class="text-white font-bold">Michael Bennett</p>
+        <p class="mt-1">Founder, QuantumShield Labs</p>
+      </div>
+      <div class="text-sm md:text-right">
+        <p>Governed AI • Security Engineering • Production Systems</p>
+        <p class="mt-2">&copy; 2026 Michael Bennett. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
