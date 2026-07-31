@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TheBinMap — Nationwide directory of liquidation bin stores. Production platform demonstrating scalable architecture, SEO execution, and revenue integration.">
     <title>TheBinMap | Case Study | Michael Bennett</title>
+    <link rel="icon" type="image/png" href="../icon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -23,7 +24,8 @@
             font-weight: 600;
         }
         .section-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
-        .screenshot-card { border: 1px solid #e5e7eb; border-radius: 0.5rem; overflow: hidden; background: white; }
+        .carousel-btn { transition: all .2s ease; }
+        .carousel-btn:hover { background: #dbeafe; color: #1e40af; }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -204,16 +206,130 @@
         </section>
 
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Slide Deck</h2>
-            <div class="bg-white rounded-lg shadow-md p-6 md:p-8 text-center">
-                <div class="mb-4"><i class="fas fa-file-powerpoint text-6xl text-orange-500"></i></div>
-                <h3 class="text-xl font-semibold mb-2">TheBinMap Video Storyboard</h3>
-                <p class="text-gray-600 mb-6 max-w-lg mx-auto">Complete visual storyboard and slide deck covering architecture, SEO strategy, and growth trajectory.</p>
-                <a href="assets/thebinmap/TheBinMap_video.odp" target="_blank" class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300">
-                    <i class="fas fa-download mr-2"></i>Download Slides (ODP)
-                </a>
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Presentation</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <div class="relative max-w-3xl mx-auto" id="slide-viewer" tabindex="0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden shadow-inner">
+                        <img id="slide-img" src="assets/thebinmap/slides/slide-01.png"
+                             alt="TheBinMap presentation — slide 1 of 8"
+                             class="w-full h-auto block">
+                    </div>
+                    <button id="slide-prev" class="carousel-btn absolute left-0 top-1/2 -translate-y-1/2 -ml-3 md:-ml-5 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 focus:outline-none" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                    <button id="slide-next" class="carousel-btn absolute right-0 top-1/2 -translate-y-1/2 -mr-3 md:-mr-5 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 focus:outline-none" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                    <div class="flex items-center justify-center gap-3 mt-4">
+                        <button id="slide-play" class="carousel-btn w-9 h-9 rounded-full bg-white shadow-sm border border-gray-200 flex items-center justify-center text-gray-600 text-sm focus:outline-none" aria-label="Pause slideshow"><i class="fas fa-pause"></i></button>
+                        <span id="slide-counter" class="text-sm text-gray-600 font-medium tabular-nums">1 / 8</span>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="assets/thebinmap/thebinmap-presentation.odp" download
+                       class="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors">
+                        <i class="fas fa-download mr-1"></i>Download original presentation (.odp)
+                    </a>
+                </div>
             </div>
         </section>
+
+        <script>
+        (function() {
+            var viewer = document.getElementById('slide-viewer');
+            var img = document.getElementById('slide-img');
+            var prev = document.getElementById('slide-prev');
+            var next = document.getElementById('slide-next');
+            var playBtn = document.getElementById('slide-play');
+            var counter = document.getElementById('slide-counter');
+            var total = 8;
+            var current = 1;
+            var playing = true;
+            var interval = 7000;
+            var timer = null;
+
+            function update() {
+                img.src = 'assets/thebinmap/slides/slide-' + String(current).padStart(2, '0') + '.png';
+                img.alt = 'TheBinMap presentation \u2014 slide ' + current + ' of ' + total;
+                counter.textContent = current + ' / ' + total;
+            }
+
+            function go(n) {
+                current = n;
+                update();
+                resetTimer();
+            }
+
+            function step(dir) {
+                var next = current + dir;
+                if (next < 1) next = total;
+                if (next > total) next = 1;
+                go(next);
+            }
+
+            function togglePlay() {
+                playing = !playing;
+                if (playing) {
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    playBtn.setAttribute('aria-label', 'Pause slideshow');
+                    startTimer();
+                } else {
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    playBtn.setAttribute('aria-label', 'Play slideshow');
+                    stopTimer();
+                }
+            }
+
+            function startTimer() {
+                stopTimer();
+                if (!playing) return;
+                timer = setTimeout(function() { step(1); }, interval);
+            }
+
+            function stopTimer() {
+                if (timer) { clearTimeout(timer); timer = null; }
+            }
+
+            function resetTimer() {
+                stopTimer();
+                startTimer();
+            }
+
+            prev.addEventListener('click', function() { step(-1); });
+            next.addEventListener('click', function() { step(1); });
+            playBtn.addEventListener('click', togglePlay);
+
+            viewer.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+                if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+                if (e.key === ' ') { e.preventDefault(); togglePlay(); }
+            });
+
+            // Visibility API
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    stopTimer();
+                } else if (playing) {
+                    startTimer();
+                }
+            });
+
+            // Reduced motion
+            var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+            function handleMotion(mq) {
+                if (mq.matches) {
+                    playing = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    playBtn.setAttribute('aria-label', 'Play slideshow');
+                    stopTimer();
+                } else {
+                    playing = true;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    playBtn.setAttribute('aria-label', 'Pause slideshow');
+                    startTimer();
+                }
+            }
+            motionQuery.addEventListener('change', handleMotion);
+            if (motionQuery.matches) { handleMotion(motionQuery); }
+            else { startTimer(); }
+        })();
+        </script>
 
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Screenshots</h2>

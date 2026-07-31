@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Michael Bennett — founder of QuantumShield Labs. Governed AI, security engineering, production systems, and evidence-first technical delivery.">
+  <meta name="description" content="Michael Bennett ? founder of QuantumShield Labs. Governed AI, security engineering, production systems, and evidence-first technical delivery.">
   <meta name="keywords" content="Michael Bennett, QuantumShield Labs, governed AI, AI security, security engineering, technical consulting, portfolio">
   <title>Michael Bennett | Founder, Engineer &amp; Governed AI Builder</title>
+  <link rel="icon" type="image/png" href="icon.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     html { scroll-behavior: smooth; }
     body { color: #172033; background: #f5f7fb; }
-    .hero-grid { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.12) 1px, transparent 0); background-size: 24px 24px; }
+    .portfolio-hero {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,.12) 1px, transparent 0),
+        linear-gradient(135deg, #172554 0%, #1e3a8a 48%, #312e81 100%);
+      background-size: 24px 24px, auto;
+    }
+    .portfolio-dark { background: #111827; }
+    .portfolio-footer { background: #111827; }
     .glass { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(10px); }
     .card { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
     .card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(30,64,175,.12); border-color: #93c5fd; }
@@ -22,14 +30,14 @@
   </style>
 </head>
 <body class="font-sans antialiased">
-  <header class="bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white hero-grid">
+  <header class="portfolio-hero text-white">
     <div class="max-w-7xl mx-auto px-5 py-14 md:py-20">
       <div class="grid lg:grid-cols-3 gap-10 items-center">
         <div class="flex justify-center lg:justify-start">
           <img src="profile.jpg" alt="Michael Bennett" class="w-40 h-40 md:w-48 md:h-48 rounded-3xl border-4 border-white shadow-2xl object-cover">
         </div>
         <div class="lg:col-span-2 text-center lg:text-left">
-          <p class="eyebrow text-blue-200 text-sm font-semibold mb-3">Founder • Engineer • Systems Builder</p>
+          <p class="eyebrow text-blue-200 text-sm font-semibold mb-3">Founder ? Engineer ? Systems Builder</p>
           <h1 class="text-4xl md:text-6xl font-bold leading-tight">Michael Bennett</h1>
           <p class="text-xl md:text-2xl text-blue-100 mt-4">Founder of QuantumShield Labs</p>
           <p class="text-lg text-blue-100 max-w-3xl mt-6 leading-relaxed">
@@ -53,7 +61,7 @@
 
   <nav class="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-5 py-4 overflow-x-auto">
-      <div class="flex gap-6 whitespace-nowrap text-sm font-semibold text-gray-600">
+      <div class="flex gap-6 whitespace-nowrap text-sm font-semibold text-gray-700">
         <a class="nav-link" href="#start">Start Here</a>
         <a class="nav-link" href="#help">How I Help</a>
         <a class="nav-link" href="#decisions">How I Work</a>
@@ -101,36 +109,12 @@
           <p class="text-gray-700 text-lg mt-5">I am most useful when a problem is complex, cross-disciplinary, or hard to trust without evidence.</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-brain text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Governed AI Operations</h3>
-            <p class="text-gray-600 mt-3">Design AI workflows with human approval, audit trails, budget controls, bounded authority, and recoverable operations.</p>
-          </article>
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-shield-alt text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Security &amp; Risk Engineering</h3>
-            <p class="text-gray-600 mt-3">Assess technical risk, strengthen system boundaries, document controls, and prepare organizations for higher-consequence environments.</p>
-          </article>
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-project-diagram text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Technical Architecture</h3>
-            <p class="text-gray-600 mt-3">Translate business goals into practical system designs, implementation roadmaps, integration plans, and decision-ready documentation.</p>
-          </article>
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-cogs text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Operational Automation</h3>
-            <p class="text-gray-600 mt-3">Reduce repetitive work while keeping sensitive actions observable, reviewable, and under human control.</p>
-          </article>
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-layer-group text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Production Web Platforms</h3>
-            <p class="text-gray-600 mt-3">Build and improve data products, directories, APIs, full-stack applications, and evidence-backed conversion systems.</p>
-          </article>
-          <article class="card border border-gray-200 rounded-2xl p-7">
-            <i class="fas fa-microscope text-3xl text-blue-700"></i>
-            <h3 class="text-xl font-bold mt-5">Discovery &amp; Technical Audits</h3>
-            <p class="text-gray-600 mt-3">Understand the current system before changing it, identify gaps and contradictions, and produce a bounded implementation plan.</p>
-          </article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-brain text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Governed AI Operations</h3><p class="text-gray-700 mt-3">Design AI workflows with human approval, audit trails, budget controls, bounded authority, and recoverable operations.</p></article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-shield-alt text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Security &amp; Risk Engineering</h3><p class="text-gray-700 mt-3">Assess technical risk, strengthen system boundaries, document controls, and prepare organizations for higher-consequence environments.</p></article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-project-diagram text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Technical Architecture</h3><p class="text-gray-700 mt-3">Translate business goals into practical system designs, implementation roadmaps, integration plans, and decision-ready documentation.</p></article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-cogs text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Operational Automation</h3><p class="text-gray-700 mt-3">Reduce repetitive work while keeping sensitive actions observable, reviewable, and under human control.</p></article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-layer-group text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Production Web Platforms</h3><p class="text-gray-700 mt-3">Build and improve data products, directories, APIs, full-stack applications, and evidence-backed conversion systems.</p></article>
+          <article class="card border border-gray-200 rounded-2xl p-7"><i class="fas fa-microscope text-3xl text-blue-700"></i><h3 class="text-xl font-bold mt-5">Discovery &amp; Technical Audits</h3><p class="text-gray-700 mt-3">Understand the current system before changing it, identify gaps and contradictions, and produce a bounded implementation plan.</p></article>
         </div>
       </div>
     </section>
@@ -140,75 +124,29 @@
         <div>
           <p class="eyebrow text-blue-700 text-xs font-bold">How I make decisions</p>
           <h2 class="text-3xl md:text-4xl font-bold mt-3">Explore widely. Decide carefully.</h2>
-          <p class="text-gray-700 text-lg mt-5 leading-relaxed">
-            I welcome ambitious ideas, but I do not treat excitement as proof. The strongest ideas survive evidence gathering, counter-evidence, simplification, bounded testing, and review.
-          </p>
-          <div class="bg-white border border-gray-200 rounded-2xl p-7 mt-7">
-            <p class="font-semibold text-gray-900">A question I return to often:</p>
-            <blockquote class="text-2xl font-bold text-blue-800 mt-3">“What are we actually trying to build?”</blockquote>
-            <p class="text-gray-600 mt-3">That question helps separate useful architecture from attractive distraction.</p>
-          </div>
+          <p class="text-gray-700 text-lg mt-5 leading-relaxed">I welcome ambitious ideas, but I do not treat excitement as proof. The strongest ideas survive evidence gathering, counter-evidence, simplification, bounded testing, and review.</p>
+          <div class="bg-white border border-gray-200 rounded-2xl p-7 mt-7"><p class="font-semibold text-gray-900">A question I return to often:</p><blockquote class="text-2xl font-bold text-blue-800 mt-3">&ldquo;What are we actually trying to build?&rdquo;</blockquote><p class="text-gray-700 mt-3">That question helps separate useful architecture from attractive distraction.</p></div>
         </div>
         <div class="space-y-6">
-          <div class="timeline-step relative pl-14">
-            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">1</span>
-            <h3 class="font-bold text-lg">Reality discovery</h3>
-            <p class="text-gray-600 mt-1">Understand the system, repository, people, constraints, and evidence before proposing change.</p>
-          </div>
-          <div class="timeline-step relative pl-14">
-            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">2</span>
-            <h3 class="font-bold text-lg">Repository understanding</h3>
-            <p class="text-gray-600 mt-1">Use structural maps and prior evidence so implementation begins from knowledge rather than repeated rediscovery.</p>
-          </div>
-          <div class="timeline-step relative pl-14">
-            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">3</span>
-            <h3 class="font-bold text-lg">Bounded mission</h3>
-            <p class="text-gray-600 mt-1">Define scope, allowed actions, definition of done, validation, and a stop condition.</p>
-          </div>
-          <div class="timeline-step relative pl-14">
-            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">4</span>
-            <h3 class="font-bold text-lg">Human review</h3>
-            <p class="text-gray-600 mt-1">Consequential decisions remain accountable and reviewable. Authority may be delegated; responsibility may not.</p>
-          </div>
-          <div class="timeline-step relative pl-14">
-            <span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">5</span>
-            <h3 class="font-bold text-lg">Validate and harvest</h3>
-            <p class="text-gray-600 mt-1">Preserve evidence, extract reusable capabilities, update understanding, and make the next mission easier.</p>
-          </div>
+          <div class="timeline-step relative pl-14"><span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">1</span><h3 class="font-bold text-lg">Reality discovery</h3><p class="text-gray-700 mt-1">Understand the system, repository, people, constraints, and evidence before proposing change.</p></div>
+          <div class="timeline-step relative pl-14"><span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">2</span><h3 class="font-bold text-lg">Repository understanding</h3><p class="text-gray-700 mt-1">Use structural maps and prior evidence so implementation begins from knowledge rather than repeated rediscovery.</p></div>
+          <div class="timeline-step relative pl-14"><span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">3</span><h3 class="font-bold text-lg">Bounded mission</h3><p class="text-gray-700 mt-1">Define scope, allowed actions, definition of done, validation, and a stop condition.</p></div>
+          <div class="timeline-step relative pl-14"><span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">4</span><h3 class="font-bold text-lg">Human review</h3><p class="text-gray-700 mt-1">Consequential decisions remain accountable and reviewable. Authority may be delegated; responsibility may not.</p></div>
+          <div class="timeline-step relative pl-14"><span class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-bold">5</span><h3 class="font-bold text-lg">Validate and harvest</h3><p class="text-gray-700 mt-1">Preserve evidence, extract reusable capabilities, update understanding, and make the next mission easier.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="bg-gray-950 text-white">
+    <section id="work" class="portfolio-dark text-white">
       <div class="max-w-7xl mx-auto px-5 py-16">
         <p class="eyebrow text-blue-300 text-xs font-bold">Selected work</p>
-        <h2 class="text-3xl md:text-4xl font-bold mt-3">Case studies built from real systems.</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-white">Case studies built from real systems.</h2>
         <p class="text-gray-300 text-lg max-w-3xl mt-5">These projects show how I combine architecture, operations, governance, research, and production delivery.</p>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
-            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Original system</span>
-            <h3 class="text-xl font-bold mt-3">QuantumShield Core</h3>
-            <p class="text-gray-300 mt-3 text-sm">Governed security operations with evidence, human approval, learning rules, and append-only operational records.</p>
-            <a href="portfolio/quantumshield-core.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
-          </article>
-          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
-            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Capability factory</span>
-            <h3 class="text-xl font-bold mt-3">Directory Factory</h3>
-            <p class="text-gray-300 mt-3 text-sm">Niche evaluation, reusable tooling, growth workflows, and commercial experimentation for directory ventures.</p>
-            <a href="portfolio/directory-factory.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
-          </article>
-          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
-            <span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Open-source foundation</span>
-            <h3 class="text-xl font-bold mt-3">Paperclip / SELARIX Work</h3>
-            <p class="text-gray-300 mt-3 text-sm">QSL extensions and operational research built on the open-source Paperclip project, with explicit attribution and governed workflows.</p>
-            <a href="portfolio/selarix-operations-platform.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
-          </article>
-          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6">
-            <span class="text-xs font-bold text-green-300 uppercase tracking-wider">Live proving ground</span>
-            <h3 class="text-xl font-bold mt-3">TheBinMap</h3>
-            <p class="text-gray-300 mt-3 text-sm">A growing production directory and intelligence platform used to validate acquisition, SEO, intake, automation, and monetization systems.</p>
-            <a href="portfolio/thebinmap.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a>
-          </article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6"><span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Original system</span><h3 class="text-xl font-bold mt-3">QuantumShield Core</h3><p class="text-gray-300 mt-3 text-sm">Governed security operations with evidence, human approval, learning rules, and append-only operational records.</p><a href="portfolio/quantumshield-core.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a></article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6"><span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Capability factory</span><h3 class="text-xl font-bold mt-3">Directory Factory</h3><p class="text-gray-300 mt-3 text-sm">Niche evaluation, reusable tooling, growth workflows, and commercial experimentation for directory ventures.</p><a href="portfolio/directory-factory.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a></article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6"><span class="text-xs font-bold text-blue-300 uppercase tracking-wider">Open-source foundation</span><h3 class="text-xl font-bold mt-3">Paperclip / SELARIX Work</h3><p class="text-gray-300 mt-3 text-sm">QSL extensions and operational research built on the open-source Paperclip project, with explicit attribution and governed workflows.</p><a href="portfolio/selarix-operations-platform.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a></article>
+          <article class="card bg-gray-900 border border-gray-700 rounded-2xl p-6"><span class="text-xs font-bold text-green-300 uppercase tracking-wider">Live proving ground</span><h3 class="text-xl font-bold mt-3">TheBinMap</h3><p class="text-gray-300 mt-3 text-sm">A growing production directory and intelligence platform used to validate acquisition, SEO, intake, automation, and monetization systems.</p><a href="portfolio/thebinmap.html" class="inline-block mt-5 text-blue-300 font-semibold">View case study <i class="fas fa-arrow-right ml-1"></i></a></article>
         </div>
       </div>
     </section>
@@ -216,115 +154,37 @@
     <section id="evidence" class="max-w-7xl mx-auto px-5 py-16">
       <div class="grid lg:grid-cols-3 gap-8">
         <div class="lg:col-span-2">
-          <p class="eyebrow text-blue-700 text-xs font-bold">Evidence, not promises</p>
-          <h2 class="text-3xl md:text-4xl font-bold mt-3">What supports the claims on this page.</h2>
+          <p class="eyebrow text-blue-700 text-xs font-bold">Evidence, not promises</p><h2 class="text-3xl md:text-4xl font-bold mt-3">What supports the claims on this page.</h2>
           <div class="grid md:grid-cols-2 gap-6 mt-9">
-            <article class="bg-white border border-gray-200 rounded-2xl p-7">
-              <h3 class="font-bold text-xl">Production systems</h3>
-              <p class="text-gray-600 mt-3">Live directories, public research, operational AI workflows, APIs, security tooling, and deployed websites.</p>
-            </article>
-            <article class="bg-white border border-gray-200 rounded-2xl p-7">
-              <h3 class="font-bold text-xl">Versioned decisions</h3>
-              <p class="text-gray-600 mt-3">Architecture notes, discovery reports, implementation plans, handoffs, doctrine, and milestone records preserved in Git.</p>
-            </article>
-            <article class="bg-white border border-gray-200 rounded-2xl p-7">
-              <h3 class="font-bold text-xl">Open-source attribution</h3>
-              <p class="text-gray-600 mt-3">Original work is distinguished from forks, integrations, extensions, and capabilities learned from worthy public projects.</p>
-            </article>
-            <article class="bg-white border border-gray-200 rounded-2xl p-7">
-              <h3 class="font-bold text-xl">Operational learning</h3>
-              <p class="text-gray-600 mt-3">Mistakes, recoveries, failed assumptions, costs, and lessons are recorded so future work begins stronger.</p>
-            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7"><h3 class="font-bold text-xl">Production systems</h3><p class="text-gray-700 mt-3">Live directories, public research, operational AI workflows, APIs, security tooling, and deployed websites.</p></article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7"><h3 class="font-bold text-xl">Versioned decisions</h3><p class="text-gray-700 mt-3">Architecture notes, discovery reports, implementation plans, handoffs, doctrine, and milestone records preserved in Git.</p></article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7"><h3 class="font-bold text-xl">Open-source attribution</h3><p class="text-gray-700 mt-3">Original work is distinguished from forks, integrations, extensions, and capabilities learned from worthy public projects.</p></article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-7"><h3 class="font-bold text-xl">Operational learning</h3><p class="text-gray-700 mt-3">Mistakes, recoveries, failed assumptions, costs, and lessons are recorded so future work begins stronger.</p></article>
           </div>
         </div>
-        <aside class="bg-blue-50 border border-blue-200 rounded-2xl p-8">
-          <h3 class="font-bold text-xl text-blue-900">Representative deliverables</h3>
-          <ul class="mt-5 space-y-4 text-gray-700">
-            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/EXECUTIVE_AI_AUTOMATION_ASSESSMENT.html" target="_blank" rel="noopener noreferrer">Executive AI Automation Assessment</a></li>
-            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/TECHNICAL_SOLUTION_BLUEPRINT.html" target="_blank" rel="noopener noreferrer">Technical Solution Blueprint</a></li>
-            <li><a class="text-blue-700 font-semibold hover:underline" href="contributions.html">Open-source contribution portfolio</a></li>
-            <li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/blog" target="_blank" rel="noopener noreferrer">Research and engineering notes</a></li>
-          </ul>
-        </aside>
+        <aside class="bg-blue-50 border border-blue-200 rounded-2xl p-8"><h3 class="font-bold text-xl text-blue-900">Representative deliverables</h3><ul class="mt-5 space-y-4 text-gray-700"><li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/EXECUTIVE_AI_AUTOMATION_ASSESSMENT.html" target="_blank" rel="noopener noreferrer">Executive AI Automation Assessment</a></li><li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/examples/TECHNICAL_SOLUTION_BLUEPRINT.html" target="_blank" rel="noopener noreferrer">Technical Solution Blueprint</a></li><li><a class="text-blue-700 font-semibold hover:underline" href="contributions.html">Open-source contribution portfolio</a></li><li><a class="text-blue-700 font-semibold hover:underline" href="https://quantumshieldlabs.dev/blog" target="_blank" rel="noopener noreferrer">Research and engineering notes</a></li></ul></aside>
       </div>
     </section>
 
     <section class="bg-white border-y border-gray-200">
-      <div class="max-w-7xl mx-auto px-5 py-16">
-        <div class="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <p class="eyebrow text-blue-700 text-xs font-bold">Recorded Q&amp;A</p>
-            <h2 class="text-3xl md:text-4xl font-bold mt-3">A video introduction is coming.</h2>
-            <p class="text-gray-700 text-lg mt-5">This section will contain short answers to the questions clients, collaborators, employers, investors, and future teammates most often ask.</p>
-            <p class="text-gray-600 mt-4">Planned topics include career transition, engineering philosophy, AI governance, open-source work, mistakes, decision making, and what it is like to collaborate with me.</p>
-          </div>
-          <div class="bg-gray-900 rounded-2xl min-h-72 flex items-center justify-center text-center p-8 shadow-lg">
-            <div>
-              <i class="fas fa-video text-5xl text-blue-300"></i>
-              <p class="text-white text-xl font-bold mt-5">Professional video Q&amp;A placeholder</p>
-              <p class="text-gray-400 mt-2">Recorded introduction and individual question videos will appear here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="max-w-7xl mx-auto px-5 py-16"><div class="grid lg:grid-cols-2 gap-10 items-center"><div><p class="eyebrow text-blue-700 text-xs font-bold">Recorded Q&amp;A</p><h2 class="text-3xl md:text-4xl font-bold mt-3">A video introduction is coming.</h2><p class="text-gray-700 text-lg mt-5">This section will contain short answers to the questions clients, collaborators, employers, investors, and future teammates most often ask.</p><p class="text-gray-700 mt-4">Planned topics include career transition, engineering philosophy, AI governance, open-source work, mistakes, decision making, and what it is like to collaborate with me.</p></div><div class="bg-gray-900 rounded-2xl min-h-72 flex items-center justify-center text-center p-8 shadow-lg"><div><i class="fas fa-video text-5xl text-blue-300"></i><p class="text-white text-xl font-bold mt-5">Professional video Q&amp;A placeholder</p><p class="text-gray-400 mt-2">Recorded introduction and individual question videos will appear here.</p></div></div></div></div>
     </section>
 
     <section id="faq" class="max-w-5xl mx-auto px-5 py-16">
-      <p class="eyebrow text-blue-700 text-xs font-bold">Frequently asked questions</p>
-      <h2 class="text-3xl md:text-4xl font-bold mt-3">Questions worth answering before we work together.</h2>
+      <p class="eyebrow text-blue-700 text-xs font-bold">Frequently asked questions</p><h2 class="text-3xl md:text-4xl font-bold mt-3">Questions worth answering before we work together.</h2>
       <div class="space-y-4 mt-9">
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">What is QuantumShield Labs?</summary>
-          <p class="text-gray-600 mt-4">QuantumShield Labs is the engineering and research organization through which I develop governed intelligence systems, security tooling, production platforms, and evidence-based technical services.</p>
-        </details>
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">How do you use AI?</summary>
-          <p class="text-gray-600 mt-4">As an engineering multiplier within bounded missions. AI may research, analyze, implement, and test, but consequential judgment remains human-directed, reviewable, and accountable.</p>
-        </details>
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">What kinds of projects are a strong fit?</summary>
-          <p class="text-gray-600 mt-4">Projects involving governed automation, security-sensitive AI, technical discovery, operational workflows, data platforms, directory systems, and difficult integrations where evidence and documentation matter.</p>
-        </details>
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">How do you handle mistakes?</summary>
-          <p class="text-gray-600 mt-4">Stop, preserve evidence, identify the actual cause, repair the smallest correct surface, validate recovery, and preserve the lesson so the process improves.</p>
-        </details>
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">Why document so much?</summary>
-          <p class="text-gray-600 mt-4">Because conversations and individual models are temporary. Evidence, rationale, decisions, and reusable capabilities should outlive them.</p>
-        </details>
-        <details class="bg-white border border-gray-200 rounded-xl p-6">
-          <summary class="font-bold cursor-pointer">What can collaborators expect?</summary>
-          <p class="text-gray-600 mt-4">Open discussion, direct questions, transparent uncertainty, respectful disagreement, frequent documentation, bounded execution, and willingness to revise when evidence changes.</p>
-        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">What is QuantumShield Labs?</summary><p class="text-gray-700 mt-4">QuantumShield Labs is the engineering and research organization through which I develop governed intelligence systems, security tooling, production platforms, and evidence-based technical services.</p></details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">How do you use AI?</summary><p class="text-gray-700 mt-4">As an engineering multiplier within bounded missions. AI may research, analyze, implement, and test, but consequential judgment remains human-directed, reviewable, and accountable.</p></details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">What kinds of projects are a strong fit?</summary><p class="text-gray-700 mt-4">Projects involving governed automation, security-sensitive AI, technical discovery, operational workflows, data platforms, directory systems, and difficult integrations where evidence and documentation matter.</p></details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">How do you handle mistakes?</summary><p class="text-gray-700 mt-4">Stop, preserve evidence, identify the actual cause, repair the smallest correct surface, validate recovery, and preserve the lesson so the process improves.</p></details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">Why document so much?</summary><p class="text-gray-700 mt-4">Because conversations and individual models are temporary. Evidence, rationale, decisions, and reusable capabilities should outlive them.</p></details>
+        <details class="bg-white border border-gray-200 rounded-xl p-6"><summary class="font-bold cursor-pointer">What can collaborators expect?</summary><p class="text-gray-700 mt-4">Open discussion, direct questions, transparent uncertainty, respectful disagreement, frequent documentation, bounded execution, and willingness to revise when evidence changes.</p></details>
       </div>
     </section>
 
-    <section id="contact" class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white">
-      <div class="max-w-5xl mx-auto px-5 py-16 text-center">
-        <p class="eyebrow text-blue-200 text-xs font-bold">Open collaboration</p>
-        <h2 class="text-3xl md:text-5xl font-bold mt-3">Have a difficult problem worth understanding properly?</h2>
-        <p class="text-blue-100 text-lg max-w-3xl mx-auto mt-5">Share the problem, current constraints, what has already been tried, and what a successful outcome would look like.</p>
-        <div class="flex flex-wrap justify-center gap-4 mt-8">
-          <a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-blue-50"><i class="fas fa-envelope mr-2"></i>Email Michael</a>
-          <a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
-          <a href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-github mr-2"></i>GitHub</a>
-        </div>
-      </div>
-    </section>
+    <section id="contact" class="bg-gradient-to-r from-blue-800 to-indigo-900 text-white"><div class="max-w-5xl mx-auto px-5 py-16 text-center"><p class="eyebrow text-blue-200 text-xs font-bold">Open collaboration</p><h2 class="text-3xl md:text-5xl font-bold mt-3">Have a difficult problem worth understanding properly?</h2><p class="text-blue-100 text-lg max-w-3xl mx-auto mt-5">Share the problem, current constraints, what has already been tried, and what a successful outcome would look like.</p><div class="flex flex-wrap justify-center gap-4 mt-8"><a href="mailto:michael@quantumshieldlabs.dev" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-bold hover:bg-blue-50"><i class="fas fa-envelope mr-2"></i>Email Michael</a><a href="https://www.linkedin.com/in/michael-bennett-a29a93103/" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a><a href="https://github.com/mbennett-labs" target="_blank" rel="noopener noreferrer" class="border border-blue-300 px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900"><i class="fab fa-github mr-2"></i>GitHub</a></div></div></section>
   </main>
 
-  <footer class="bg-gray-950 text-gray-300">
-    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-6">
-      <div>
-        <p class="text-white font-bold">Michael Bennett</p>
-        <p class="mt-1">Founder, QuantumShield Labs</p>
-      </div>
-      <div class="text-sm md:text-right">
-        <p>Governed AI • Security Engineering • Production Systems</p>
-        <p class="mt-2">&copy; 2026 Michael Bennett. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <footer class="portfolio-footer text-gray-300"><div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-6"><div><p class="text-white font-bold">Michael Bennett</p><p class="mt-1">Founder, QuantumShield Labs</p></div><div class="text-sm md:text-right"><p>Governed AI ? Security Engineering ? Production Systems</p><p class="mt-2">&copy; 2026 Michael Bennett. All rights reserved.</p></div></div></footer>
 </body>
 </html>
